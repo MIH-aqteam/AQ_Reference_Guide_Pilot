@@ -184,7 +184,7 @@
 <td><p>string</p></td>
 <td><p>PK</p></td>
 <td><p></p></td>
-<td><p>ComplianceAssessmentMethod<br>SamplingProcess<br>SamplingPointLocation<br>ObservationMeasurementResult</p></td>
+<td><p><a class="reference internal" href="ComplianceAssessmentMethod.html"><span class="std std-doc">ComplianceAssessmentMethod</span></a><br><a class="reference internal" href="SamplingProcess.html"><span class="std std-doc">SamplingProcess</span></a><br><a class="reference internal" href="SamplingPointLocation.html"><span class="std std-doc">SamplingPointLocation</span></a><br>ObservationMeasurementResult</p></td>
 <td class="text-center"><p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-02-assessmentmethodid">Y</a></p></td>
 </tr>
 <tr class="row-even"><td><p>SPO_03</p></td>
@@ -211,7 +211,7 @@
 <td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td><p>MeasurementStation</p></td>
+<td><p><a class="reference internal" href="MeasurementStation.html"><span class="std std-doc">MeasurementStation</span></a></p></td>
 <td class="text-center"><p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-05-stationeoicode">Y</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>SPO_06</p></td>
@@ -299,12 +299,12 @@
 <p><strong>Content</strong></p>
 <p>EoI (Exchange of Information) code of the air quality measurement station, as in AirBase, either re-used or given by data provider following strict rules.</p>
 <p><strong>Code list / reference</strong></p>
-<p>There will be no specific code list in Data Dictionary but the Station table in reference data flow will serve as code list for AirQualityStationEoICode values.</p>
+<p>There will be no specific code list in Data Dictionary but the MeasurementStation table in reference data flow will serve as code list for StationEoICode values.</p>
 <p><strong>Remarks</strong></p>
 <p>StationEoICode must be always provided and cannot be modified.</p>
 <p>Station will become inactive if all sampling points in that station are inactive.</p>
 <p>The same Station can become active again if there are new active sampling points or existing sampling points become active again.</p>
-<p>It will be cross-checked against Station table.</p>
+<p>It will be cross-checked against MeasurementStation table.</p>
 <p><strong>In Reporting</strong></p>
 <p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-05-stationeoicode">Y – View reporting attribute</a></p>
 </section>

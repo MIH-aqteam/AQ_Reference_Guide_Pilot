@@ -16,10 +16,10 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | ADJ_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-01-countrycode) |
-| ADJ_02 | AttainmentId | varchar(50) | string | PK |  | ComplianceAssessmentMethod | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-02-attainmentid) |
+| ADJ_02 | AttainmentId | varchar(50) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-02-attainmentid) |
 | ADJ_03 | AdjustmentSource | varchar(50) | string | PK | [adjustmentsourcetype](https://dd.eionet.europa.eu/vocabulary/aq/adjustmentsourcetype/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-03-adjustmentsource) |
-| ADJ_04 | AdjustmentAssessmentMethodId | varchar(100) | string |  |  | ModelObjectiveEstimation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-04-adjustmentassessmentmethodid) |
-| ADJ_05 | AdjustmentDocumentId | varchar(150) | string |  |  | Documentation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-05-adjustmentdocumentid) |
+| ADJ_04 | AdjustmentAssessmentMethodId | varchar(100) | string |  |  | [ModelObjectiveEstimation](ModelObjectiveEstimation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-04-adjustmentassessmentmethodid) |
+| ADJ_05 | AdjustmentDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-05-adjustmentdocumentid) |
 | ADJ_06 | Country | varchar(20) | string |  |  |  | N |
 | ADJ_07 | Deletion | bit | boolean |  |  |  | N |
 
@@ -44,6 +44,7 @@ Country or territory ISO2 code.
 **Content**
 
 Identifier of the air quality compliance situation, given by data provider.
+This attribute must follow a defined structure (see Identifiers section). 
 
 **Remarks**
 
@@ -71,7 +72,7 @@ Identifier of the method - model - used for deduction assessment, given by data 
 
 **Remarks**
 
-AdjAssessmentMethodId is a model or OBE identifier that points to the method (model/OBE in the Model table) which was used for the assessments of the deduction.
+AdjAssessmentMethodId is a model or OBE identifier that points to the method (model/OBE in the ModelObjectiveEstimation table) which was used for the assessments of the deduction.
 If there are several different adjustment types/sources, different AdjAssessmentMethodIds must be used, so that it is possible to distinguish between corresponding adjustment values reported in the ModellingResult (Inline or External) table.
 It will be cross-checked against the Model table, also - indirectly - against the ModellingResult tables.
 

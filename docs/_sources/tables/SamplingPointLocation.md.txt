@@ -16,11 +16,11 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | SPL_01 | CountryCode | varchar(2) | string | PK |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-01-countrycode) |
-| SPL_02 | AssessmentMethodId | varchar(100) | string | PK |  | ComplianceAssessmentMethod<br>SamplingPoint<br>SamplingProcess<br>ObservationMeasurementResult | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-02-assessmentmethodid) |
+| SPL_02 | AssessmentMethodId | varchar(100) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md)<br>[SamplingPoint](SamplingPoint.md)<br>[SamplingProcess](SamplingProcess.md)<br>ObservationMeasurementResult | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-02-assessmentmethodid) |
 | SPL_03 | LocationBegin | datetime | datetime | PK |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-03-locationbegin) |
 | SPL_04 | LocationEnd | datetime | datetime |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-04-locationend) |
 | SPL_05 | StationArea | varchar(100) | string |  | [areaclassification](https://dd.eionet.europa.eu/vocabulary/aq/areaclassification/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-05-stationarea) |
-| SPL_06 | SamplingPointCategory | varchar(50) | string |  | Code list to be developed |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-06-samplingpointcategory) |
+| SPL_06 | SamplingPointCategory | varchar(50) | string |  | [samplingpointcategory](https://dd.eionet.europa.eu/vocabulary/aq/samplingpointcategory) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-06-samplingpointcategory) |
 | SPL_07 | Hotspot | bit | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-07-hotspot) |
 | SPL_08 | Supersite | bit | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-08-supersite) |
 | SPL_09 | Latitude | decimal(8,4) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-09-latitude) |

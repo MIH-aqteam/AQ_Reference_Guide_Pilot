@@ -16,7 +16,7 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | ZGE_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ZoneGeometry.html#zge-01-countrycode) |
-| ZGE_02 | ZoneId | varchar(20) | string | PK |  | AssessmentRegimeZone | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ZoneGeometry.html#zge-02-zoneid) |
+| ZGE_02 | ZoneId | varchar(20) | string | PK |  | [AssessmentRegimeZone](AssessmentRegimeZone.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ZoneGeometry.html#zge-02-zoneid) |
 | ZGE_04 | ZoneGeometry | ??? | ??? |  |  |  | N |
 | ZGE_03 | ZoneGeometryGeoJson | varbinary | geometry |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ZoneGeometry.html#zge-03-zonegeometrygeojson) |
 | ZGE_05 | Country | varchar(20) | string |  |  |  | N |
@@ -67,9 +67,9 @@ Geospatial representation of the air quality zone (e.g., polygon geometry).
 **Remarks**
 
 It is allowed to report zone geometries in coordinate systems with the following EPSG codes:
-- 3035,
-- 4258,
-- 4326.
+- 3035
+- 4258
+- 4326
 
 **In Reporting**
 

@@ -182,7 +182,7 @@
 <td><p>string</p></td>
 <td><p>PK</p></td>
 <td><p></p></td>
-<td><p>ComplianceAssessmentMethod</p></td>
+<td><p><a class="reference internal" href="ComplianceAssessmentMethod.html"><span class="std std-doc">ComplianceAssessmentMethod</span></a></p></td>
 <td class="text-center"><p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-02-attainmentid">Y</a></p></td>
 </tr>
 <tr class="row-even"><td><p>ADJ_03</p></td>
@@ -200,7 +200,7 @@
 <td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td><p>ModelObjectiveEstimation</p></td>
+<td><p><a class="reference internal" href="ModelObjectiveEstimation.html"><span class="std std-doc">ModelObjectiveEstimation</span></a></p></td>
 <td class="text-center"><p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-04-adjustmentassessmentmethodid">Y</a></p></td>
 </tr>
 <tr class="row-even"><td><p>ADJ_05</p></td>
@@ -209,7 +209,7 @@
 <td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td><p>Documentation</p></td>
+<td><p><a class="reference internal" href="Documentation.html"><span class="std std-doc">Documentation</span></a></p></td>
 <td class="text-center"><p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-05-adjustmentdocumentid">Y</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>ADJ_06</p></td>
@@ -249,7 +249,8 @@
 <section id="adj-02-attainmentid">
 <h3><a class="toc-backref" href="#id4" role="doc-backlink">ADJ_02 - AttainmentId</a><a class="headerlink" href="#adj-02-attainmentid" title="Link to this heading"></a></h3>
 <p><strong>Content</strong></p>
-<p>Identifier of the air quality compliance situation, given by data provider.</p>
+<p>Identifier of the air quality compliance situation, given by data provider.
+This attribute must follow a defined structure (see Identifiers section).</p>
 <p><strong>Remarks</strong></p>
 <p>It will be cross-checked against the ComplianceAssessmentMethod table.</p>
 <p><strong>In Reporting</strong></p>
@@ -267,7 +268,7 @@
 <p><strong>Content</strong></p>
 <p>Identifier of the method - model - used for deduction assessment, given by data provider.</p>
 <p><strong>Remarks</strong></p>
-<p>AdjAssessmentMethodId is a model or OBE identifier that points to the method (model/OBE in the Model table) which was used for the assessments of the deduction.
+<p>AdjAssessmentMethodId is a model or OBE identifier that points to the method (model/OBE in the ModelObjectiveEstimation table) which was used for the assessments of the deduction.
 If there are several different adjustment types/sources, different AdjAssessmentMethodIds must be used, so that it is possible to distinguish between corresponding adjustment values reported in the ModellingResult (Inline or External) table.
 It will be cross-checked against the Model table, also - indirectly - against the ModellingResult tables.</p>
 <p><strong>In Reporting</strong></p>

@@ -58,7 +58,7 @@ EoI (Exchange of Information) code of the air quality measurement station, as in
 
 **Code list / reference**
 
-There will be no specific code list in Data Dictionary but the Station table in reference data flow will serve as code list for AirQualityStationEoICode values.
+There will be no specific code list in Data Dictionary but the MeassurementStation table in reference data flow will serve as code list for StationEoICode values.
 
 **Remarks**
 

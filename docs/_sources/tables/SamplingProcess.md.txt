@@ -17,7 +17,7 @@
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | SPP_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-01-countrycode) |
 | SPP_02 | ProcessId | varchar(150) | string | PK |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-02-processid) |
-| SPP_03 | AssessmentMethodId | varchar(100) | string | PK |  | ComplianceAssessmentMethod<br>SamplingPoint<br>SamplingPointLocation<br>ObservationMeasurementResult | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-03-assessmentmethodid) |
+| SPP_03 | AssessmentMethodId | varchar(100) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md)<br>[SamplingPoint](SamplingPoint.md)<br>[SamplingPointLocation](SamplingPointLocation.md)<br>ObservationMeasurementResult | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-03-assessmentmethodid) |
 | SPP_04 | ProcessActivityBegin | datetime | datetime | PK |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-04-processactivitybegin) |
 | SPP_05 | ProcessActivityEnd | datetime | datetime |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-05-processactivityend) |
 | SPP_06 | PollutantId | int | numeric |  | [pollutant](https://dd.eionet.europa.eu/vocabulary/aq/pollutant/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-06-pollutantid) |
@@ -26,9 +26,9 @@
 | SPP_09 | Equipment | varchar(50) | string |  | [measurementequipment](https://dd.eionet.europa.eu/vocabulary/aq/measurementequipment/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-09-equipment) |
 | SPP_10 | AnalyticalTechnique | varchar(50) | string |  | [analyticaltechnique](https://dd.eionet.europa.eu/vocabulary/aq/analyticaltechnique/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-10-analyticaltechnique) |
 | SPP_11 | EquivalenceDemonstrated | varchar(50) | string |  | [equivalencedemonstrated](https://dd.eionet.europa.eu/vocabulary/aq/equivalencedemonstrated) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-11-equivalencedemonstrated) |
-| SPP_12 | DataQualityDocumentId | varchar(150) | string |  |  | Documentation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-12-dataqualitydocumentid) |
-| SPP_13 | EquivalenceDemonstrationDocumentId | varchar(150) | string |  |  | Documentation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-13-equivalencedemonstrationdocumentid) |
-| SPP_14 | ProcessDocumentId | varchar(150) | string |  |  | Documentation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-14-processdocumentid) |
+| SPP_12 | DataQualityDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-12-dataqualitydocumentid) |
+| SPP_13 | EquivalenceDemonstrationDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-13-equivalencedemonstrationdocumentid) |
+| SPP_14 | ProcessDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-14-processdocumentid) |
 | SPP_15 | Country | varchar(20) | string |  |  |  | N |
 | SPP_16 | SamplingPointReferenceId | varchar(32) | string |  |  |  | N |
 | SPP_17 | Pollutant | varchar(50) | string |  |  |  | N |

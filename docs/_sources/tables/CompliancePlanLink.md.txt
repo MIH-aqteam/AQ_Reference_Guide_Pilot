@@ -16,10 +16,10 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | CPL_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-01-countrycode) |
-| CPL_02 | AttainmentId | varchar(50) | string | PK |  | ComplianceAssessmentMethod | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-02-attainmentid) |
-| CPL_03 | PlanId | varchar(50) | string | PK |  | PlanScenario | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-03-planid) |
-| CPL_04 | ScenarioId | varchar(50) | string | PK |  | PlanScenario | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-04-scenarioid) |
-| CPL_05 | SourceApportionmentId | varchar(50) | string | PK |  | SourceApportionment | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-05-sourceapportionmentid) |
+| CPL_02 | AttainmentId | varchar(50) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-02-attainmentid) |
+| CPL_03 | PlanId | varchar(50) | string | PK |  | [PlanScenario](PlanScenario.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-03-planid) |
+| CPL_04 | ScenarioId | varchar(50) | string | PK |  | [PlanScenario](PlanScenario.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-04-scenarioid) |
+| CPL_05 | SourceApportionmentId | varchar(50) | string | PK |  | [SourceApportionment](SourceApportionment.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-05-sourceapportionmentid) |
 | CPL_12 | Deletion | bit | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-12-deletion) |
 | CPL_13 | Country | varchar(20) | string |  |  |  | N |
 | CPL_14 | ReportingYear | int | numeric |  |  |  | N |
@@ -45,6 +45,7 @@ Country or territory ISO2 code.
 **Content**
 
 Identifier of the air quality compliance situation, given by data provider.
+This attribute must follow a defined structure (see Identifiers section). 
 
 **Remarks**
 
@@ -59,6 +60,7 @@ Several AttainmentIds can point to the same PlanId (e.g. the plan covers differe
 **Content**
 
 Identifier of the air quality plan, given by data provider.
+This attribute must follow a defined structure (see Identifiers section). 
 
 **Remarks**
 
@@ -77,6 +79,7 @@ Identifier of the scenario, given by data provider.
 **Remarks**
 
 ScenarioId, several scenarios can apply to the same PlanId (e.g. different pollutant and/or data aggregation) and vice versa. It will be cross-checked against the PlanScenario table.
+This attribute must follow a defined structure (see Identifiers section). 
 
 **In Reporting**
 

@@ -16,15 +16,15 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | MOE_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-01-countrycode) |
-| MOE_02 | AssessmentMethodId | varchar(100) | string | PK |  | ComplianceAssessmentMethod<br>SpatialRepresentativeness<br>PollutionLevelAdjustment<br>PlanScenario<br>MOEResultInline<br>MOEResultExternal | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-02-assessmentmethodid) |
+| MOE_02 | AssessmentMethodId | varchar(100) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md)<br>[SpatialRepresentativeness](SpatialRepresentativeness.md)<br>[PollutionLevelAdjustment](PollutionLevelAdjustment.md)<br>[PlanScenario](PlanScenario.md)<br>MOEResultInline<br>MOEResultExternal | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-02-assessmentmethodid) |
 | MOE_03 | DataAggregationProcessId | varchar(50) | string | PK | [aggregationprocess](https://dd.eionet.europa.eu/vocabulary/aq/aggregationprocess/view) | MOEResultInline<br>MOEResultExternal | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-03-dataaggregationprocessid) |
 | MOE_04 | AssessmentMethodName | varchar(150) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-04-assessmentmethodname) |
 | MOE_05 | PollutantId | int | numeric |  | [pollutant](https://dd.eionet.europa.eu/vocabulary/aq/pollutant/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-05-pollutantid) |
 | MOE_06 | ResultEncoding | varchar(10) | string |  | [resultencoding](https://dd.eionet.europa.eu/vocabulary/aq/resultencoding) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-06-resultencoding) |
 | MOE_07 | MethodApplication | varchar(20) | string |  | [modelapplication](https://dd.eionet.europa.eu/vocabulary/aq/modelapplication) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-07-methodapplication) |
 | MOE_08 | GenericMQI | decimal(5,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-08-genericmqi) |
-| MOE_09 | DataQualityDocumentId | varchar(150) | string |  |  | Documentation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-09-dataqualitydocumentid) |
-| MOE_10 | MethodDocumentId | varchar(150) | string |  |  | Documentation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-10-methoddocumentid) |
+| MOE_09 | DataQualityDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-09-dataqualitydocumentid) |
+| MOE_10 | MethodDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-10-methoddocumentid) |
 | MOE_11 | Country | varchar(20) | string |  |  |  | N |
 | MOE_12 | Pollutant | varchar(50) | string |  |  |  | N |
 | MOE_13 | DataAggregationProcess | varchar(XXX) | string |  |  |  | N |
@@ -56,7 +56,7 @@ Identifier of the assessment method (model), given by data provider.
 
 AssessmentMethodId which is model or OBE identifier is understood as an application of modelling or estimation methodology.
 It may be re-used for different years if the methodology and data sources remain the same (for example when the same source of meteorological data is used with data from different years).
-
+This attribute must follow a defined structure (see Identifiers section). 
 ---
 
 **In Reporting**

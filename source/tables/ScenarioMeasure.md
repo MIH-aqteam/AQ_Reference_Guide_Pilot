@@ -16,11 +16,11 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | SME_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-01-countrycode) |
-| SME_02 | ScenarioId | varchar(50) | string | PK |  | ComplianceAssessmentMethod<br>PlanScenario | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-02-scenarioid) |
+| SME_02 | ScenarioId | varchar(50) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md)<br>[PlanScenario](PlanScenario.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-02-scenarioid) |
 | SME_03 | ScenarioCategory | varchar(20) | string | PK | [scenariocategory](https://dd.eionet.europa.eu/vocabulary/aq/scenariocategory) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-03-scenariocategory) |
-| SME_04 | MeasureGroupId | varchar(50) | string | PK |  | MeasurementStation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-04-measuregroupid) |
+| SME_04 | MeasureGroupId | varchar(50) | string | PK |  | [MeasurementStation](MeasurementStation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-04-measuregroupid) |
 | SME_05 | MeasureGroupPollutionReduction | decimal(10,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-05-measuregrouppollutionreduction) |
-| SME_06 | MeasureReductionAssessmentMethodId | varchar(100) | string |  |  | ModelObjectiveEstimation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-06-measurereductionassessmentmethodid) |
+| SME_06 | MeasureReductionAssessmentMethodId | varchar(100) | string |  |  | [ModelObjectiveEstimation](ModelObjectiveEstimation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-06-measurereductionassessmentmethodid) |
 | SME_07 | Country | varchar(20) | string |  |  |  | N |
 | SME_08 | Pollutant | varchar(50) | string |  |  |  | N |
 | SME_09 | PollutantId | int | numeric |  |  |  | N |
@@ -49,6 +49,7 @@ Country or territory ISO2 code.
 **Content**
 
 Identifier of the scenario, given by data provider.
+This attribute must follow a defined structure (see Identifiers section). 
 
 **Remarks**
 
@@ -110,7 +111,7 @@ Identifier of the assessment method - model -  used in the scenario, given by da
 
 **Remarks**
 
-AssessmentMethodId: the model/OBE used for producing the results for the measure group (also to be declared in the Model table). It may be cross-checked against Model table, also - indirectly - against ModellingResult table.
+AssessmentMethodId: the model/OBE used for producing the results for the measure group (also to be declared in the ModelObjectiveEstimation table). It may be cross-checked against Model table, also - indirectly - against ModellingResult table.
 
 **In Reporting**
 

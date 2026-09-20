@@ -16,7 +16,7 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | MEA_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-01-countrycode) |
-| MEA_02 | MeasureGroupId | varchar(50) | string | PK |  | ScenarioMeasure | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-02-measuregroupid) |
+| MEA_02 | MeasureGroupId | varchar(50) | string | PK |  | [ScenarioMeasure](ScenarioMeasure.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-02-measuregroupid) |
 | MEA_03 | MeasureId | varchar(50) | string | PK |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-03-measureid) |
 | MEA_20 | ReportingTime | datetime | datetime | PK |  |  | N |
 | MEA_04 | MeasureNationalCode | varchar(50) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-04-measurenationalcode) |

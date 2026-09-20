@@ -16,10 +16,10 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | SPO_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-01-countrycode) |
-| SPO_02 | AssessmentMethodId | varchar(100) | string | PK |  | ComplianceAssessmentMethod<br>SamplingProcess<br>SamplingPointLocation<br>ObservationMeasurementResult | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-02-assessmentmethodid) |
+| SPO_02 | AssessmentMethodId | varchar(100) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md)<br>[SamplingProcess](SamplingProcess.md)<br>[SamplingPointLocation](SamplingPointLocation.md)<br>ObservationMeasurementResult | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-02-assessmentmethodid) |
 | SPO_03 | SamplingPointReferenceId | varchar(32) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-03-samplingpointreferenceid) |
 | SPO_04 | PollutantId | int | numeric |  | [pollutant](https://dd.eionet.europa.eu/vocabulary/aq/pollutant/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-04-pollutantid) |
-| SPO_05 | StationEoICode | varchar(10) | string |  |  | MeasurementStation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-05-stationeoicode) |
+| SPO_05 | StationEoICode | varchar(10) | string |  |  | [MeasurementStation](MeasurementStation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-05-stationeoicode) |
 | SPO_06 | Country | varchar(20) | string |  |  |  | N |
 | SPO_07 | SamplingPointStatus | bit | boolean |  |  |  | N |
 | SPO_08 | Pollutant | varchar(50) | string |  |  |  | N |
@@ -93,7 +93,7 @@ EoI (Exchange of Information) code of the air quality measurement station, as in
 
 **Code list / reference**
 
-There will be no specific code list in Data Dictionary but the Station table in reference data flow will serve as code list for AirQualityStationEoICode values.
+There will be no specific code list in Data Dictionary but the MeasurementStation table in reference data flow will serve as code list for StationEoICode values.
 
 **Remarks**
 
@@ -103,7 +103,7 @@ Station will become inactive if all sampling points in that station are inactive
 
 The same Station can become active again if there are new active sampling points or existing sampling points become active again.
 
-It will be cross-checked against Station table.
+It will be cross-checked against MeasurementStation table.
 
 **In Reporting**
 

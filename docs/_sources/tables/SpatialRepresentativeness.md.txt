@@ -16,11 +16,11 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | SRS_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-01-countrycode) |
-| SRS_02 | SRSId | varchar(50) | string | PK |  | ComplianceAssessmentMethod | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-02-srsid) |
+| SRS_02 | SRSId | varchar(50) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-02-srsid) |
 | SRS_03 | SRSApplicationId | varchar(50) | string | PK |  | SRSInline<br>SRSExternal | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-03-srsapplicationid) |
 | SRS_04 | SRSApplication | varchar(50) | string |  | [SRapplication](https://dd.eionet.europa.eu/vocabulary/aq/SRapplication) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-04-srsapplication) |
 | SRS_05 | ResultEncoding | varchar(10) | string |  | [resultencoding](https://dd.eionet.europa.eu/vocabulary/aq/resultencoding/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-05-resultencoding) |
-| SRS_06 | RepresentativenessAssessmentMethodId | varchar(100) | string |  |  | ModelObjectiveEstimation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-06-representativenessassessmentmethodid) |
+| SRS_06 | RepresentativenessAssessmentMethodId | varchar(100) | string |  |  | [ModelObjectiveEstimation](ModelObjectiveEstimation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-06-representativenessassessmentmethodid) |
 | SRS_07 | Country | varchar(20) | string |  |  |  | N |
 | SRS_08 | Deletion | bit | boolean |  |  |  | N |
 
@@ -58,7 +58,7 @@ Identifier pointing to the specific spatial representativeness given by data pro
 
 **Remarks**
 
-The same SRSId can have several SRSApplication_Id (e.g. one for the SPO representativeness area and one for the exceedance extent).
+The same SRSId can have several SRSApplicationId (e.g. one for the SPO representativeness area and one for the exceedance extent).
 
 **In Reporting**
 
@@ -96,7 +96,7 @@ Identifier of the assessment method (model) used for defining the area (either r
 
 **Remarks**
 
-AssessmentMethodId is a model or OBE identifier that points to the method (model/OBE in the Model table) which was used for the assessments of the SPO representativeness area or the exceedance extent.
+AssessmentMethodId is a model or OBE identifier that points to the method (model/OBE in the ModelObjectiveEstimation table) which was used for the assessments of the SPO representativeness area or the exceedance extent.
 
 **In Reporting**
 

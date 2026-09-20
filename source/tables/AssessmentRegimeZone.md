@@ -16,8 +16,8 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | ARZ_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-01-countrycode) |
-| ARZ_02 | AssessmentRegimeId | varchar(50) | string | PK |  | ComplianceAssessmentMethod | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-02-assessmentregimeid) |
-| ARZ_03 | ZoneId | varchar(50) | string |  |  | ZoneGeometry | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-03-zoneid) |
+| ARZ_02 | AssessmentRegimeId | varchar(50) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-02-assessmentregimeid) |
+| ARZ_03 | ZoneId | varchar(50) | string |  |  | [ZoneGeometry](ZoneGeometry.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-03-zoneid) |
 | ARZ_04 | ZoneNationalCode | varchar(50) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-04-zonenationalcode) |
 | ARZ_05 | ZoneArea | decimal(10,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-05-zonearea) |
 | ARZ_06 | ZoneCategory | varchar(20) | string |  | [zonecategory](https://dd.eionet.europa.eu/vocabulary/aq/zonecategory/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-06-zonecategory) |
@@ -33,7 +33,7 @@
 | ARZ_16 | ZoneResidentPopulationYear | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-16-zoneresidentpopulationyear) |
 | ARZ_17 | ZoneResidentPopulation | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-17-zoneresidentpopulation) |
 | ARZ_18 | ClassificationYear | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-18-classificationyear) |
-| ARZ_19 | ClassificationDocumentId | varchar(150) | string |  |  | Documentation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-19-classificationdocumentid) |
+| ARZ_19 | ClassificationDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-19-classificationdocumentid) |
 | ARZ_20 | Country | varchar(20) | string |  |  |  | N |
 | ARZ_21 | ReportingYear | int | numeric |  |  |  | N |
 | ARZ_22 | Pollutant | varchar(50) | string |  |  |  | N |
@@ -75,6 +75,10 @@ Country or territory ISO2 code.
 **Content**
 
 Identifier of the air quality assessment regime, given by data provider.
+
+**Remarks**
+
+This attribute must follow a defined structure (see Identifiers section). 
 
 **In Reporting**
 
@@ -219,7 +223,7 @@ Use of indicative measurements and/or modelling to reduce fixed measurement netw
 
 Y/N.
 
-FixedSPOReduction relates to the reduction of the number of sampling points for fixed measurements, which may be reduced by up to 50% under certain conditions as foreseen in the recasted Air Quality Directive 2024/2881 art. 9 &sect;3.
+FixedMeasurementReduction relates to the reduction of the number of sampling points for fixed measurements, which may be reduced by up to 50% under certain conditions as foreseen in the recasted Air Quality Directive 2024/2881 art. 9 &sect;3.
 
 **In Reporting**
 

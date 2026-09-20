@@ -16,8 +16,8 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | PSC_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-01-countrycode) |
-| PSC_02 | PlanId | varchar(50) | string | PK |  | CompliancePlanLink | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-02-planid) |
-| PSC_03 | ScenarioId | varchar(50) | string | PK |  | CompliancePlanLink<br>ScenarioMeasure | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-03-scenarioid) |
+| PSC_02 | PlanId | varchar(50) | string | PK |  | [CompliancePlanLink](CompliancePlanLink.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-02-planid) |
+| PSC_03 | ScenarioId | varchar(50) | string | PK |  | [CompliancePlanLink](CompliancePlanLink.md)<br>[ScenarioMeasure](ScenarioMeasure.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-03-scenarioid) |
 | PSC_04 | ScenarioCategory | varchar(20) | string | PK | [scenariocategory](https://dd.eionet.europa.eu/vocabulary/aq/scenariocategory) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-04-scenariocategory) |
 | PSC_05 | ScenarioNationalCode | varchar(50) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-05-scenarionationalcode) |
 | PSC_06 | PollutantId | int | numeric |  | [pollutant](https://dd.eionet.europa.eu/vocabulary/aq/pollutant/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-06-pollutantid) |
@@ -25,7 +25,7 @@
 | PSC_08 | ScenarioYear | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-08-scenarioyear) |
 | PSC_09 | ScenarioPollutionLevel | decimal(10,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-09-scenariopollutionlevel) |
 | PSC_10 | ExposedPopulation | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-10-exposedpopulation) |
-| PSC_11 | ScenarioAssessmentMethodId | varchar(100) | string |  |  | ModelObjectiveEstimation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-11-scenarioassessmentmethodid) |
+| PSC_11 | ScenarioAssessmentMethodId | varchar(100) | string |  |  | [ModelObjectiveEstimation](ModelObjectiveEstimation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-11-scenarioassessmentmethodid) |
 | PSC_12 | Country | varchar(20) | string |  |  |  | N |
 | PSC_13 | Pollutant | varchar(50) | string |  |  |  | N |
 | PSC_14 | DataAggregationProcess | varchar(XXX) | string |  |  |  | N |
@@ -53,6 +53,7 @@ Country or territory ISO2 code.
 **Content**
 
 Identifier of the air quality plan, given by data provider.
+This attribute must follow a defined structure (see Identifiers section). 
 
 **In Reporting**
 
@@ -63,6 +64,7 @@ Identifier of the air quality plan, given by data provider.
 **Content**
 
 Identifier of the scenario, given by data provider.
+This attribute must follow a defined structure (see Identifiers section). 
 
 **In Reporting**
 
@@ -158,7 +160,7 @@ Identifier of the assessment method - model -  used in the scenario, given by da
 
 **Remarks**
 
-AssessmentMethodId: the model/OBE used for producing the scenario (also to be declared in the Model table). It may be cross-checked against Model table, also - indirectly - against ModellingResult table.
+AssessmentMethodId: the model/OBE used for producing the scenario (also to be declared in the ModelObjectiveEstimation table). It may be cross-checked against Model table, also - indirectly - against ModellingResult table.
 
 **In Reporting**
 

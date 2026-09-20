@@ -15,7 +15,7 @@
 
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
-| MOG_01 | CountryCode | varchar(2) | string | PK |  |  | N |
+| MRG_01 | CountryCode | varchar(2) | string | PK |  |  | N |
 | MRG_02 | AssessmentMethodId | varchar(100) | string | PK |  |  | N |
 | MRG_03 | Start | datetime | datetime | PK |  |  | N |
 | MRG_04 | DataAggregationProcessId | varchar(50) | string | PK |  |  | N |
@@ -49,7 +49,7 @@ Attributes with ReportNet3 data type `date` or `datetime` shall use the ISO 8601
 
 ## Attribute details
 
-### MOG_01 - CountryCode
+### MRG_01 - CountryCode
 
 **Content**
 

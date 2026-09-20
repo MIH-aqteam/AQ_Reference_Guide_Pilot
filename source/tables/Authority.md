@@ -17,7 +17,7 @@
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | AUT_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-01-countrycode) |
 | AUT_02 | AuthorityInstanceId | varchar(50) | string | PK | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-02-authorityinstanceid) |
-| AUT_03 | AuthorityRole | varchar(50) | string | PK | [authorityobject](https://dd.eionet.europa.eu/vocabulary/aq/authorityobject) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-03-authorityrole) |
+| AUT_03 | AuthorityRole | varchar(50) | string | PK | [authorityrole](https://dd.eionet.europa.eu/vocabulary/aq/authorityrole) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-03-authorityrole) |
 | AUT_04 | Email | varchar(50) | string | PK | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-04-email) |
 | AUT_11 | ReportingTime | datetime | datetime | PK | | | N |
 | AUT_05 | AuthorityInstance | varchar(20) | string | | [authorityinstance](https://dd.eionet.europa.eu/vocabulary/aq/authorityinstance) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-05-authorityinstance) |
@@ -25,7 +25,7 @@
 | AUT_07 | AuthorityURL | varchar(150) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-07-authorityurl) |
 | AUT_08 | AuthorityAddress | varchar(150) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-08-authorityaddress) |
 | AUT_09 | PersonName | varchar(150) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-09-personname) |
-| AUT_10 | AuthorityStatus | varchar(10) | string | | [aq/authoritystatus/](https://dd.eionet.europa.eu/vocabulary/aq/authoritystatus/) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-10-authoritystatus) |
+| AUT_10 | AuthorityStatus | varchar(10) | string | | [authoritystatus](https://dd.eionet.europa.eu/vocabulary/aq/authoritystatus/) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-10-authoritystatus) |
 | AUT_12 | Country | varchar(20) | string | | | | N |
 | AUT_13 | Deletion | bit | boolean | | | | N |
 
@@ -151,7 +151,7 @@ Name of the contact person in the authority or institute.
 
 **Remarks**
 
-PersonName have to be filled in but reporting details on personâs name are necessary only for reporters who need access to the ReportNet3.
+PersonName have to be filled in but reporting details on person's name are necessary only for reporters who need access to the ReportNet3.
 
 An informed consent statement will be attached clarifying that this data will be used for establishing access rights and filling it in means both access request and consent for data use.
 
