@@ -35,7 +35,6 @@ SourceApportionment
 ScenarioMeasure
 Measure
 Documentation
-ObservationMeasurementResultPNSD
 ```
 
 <div class="reporting-table-grid">
@@ -220,13 +219,6 @@ ObservationMeasurementResultPNSD
 <span class="reporting-table-title">Documentation</span>
 <span class="reporting-table-image">
 <img src="../_static/table-icons/Documentation.png" alt="Documentation">
-</span>
-</a>
-
-<a class="reporting-table-card" href="ObservationMeasurementResultPNSD.html">
-<span class="reporting-table-title">ObservationMeasurementResultPNSD</span>
-<span class="reporting-table-image">
-<img src="../_static/table-icons/ObservationMeasurementResultPNSD.png" alt="ObservationMeasurementResultPNSD">
 </span>
 </a>
 

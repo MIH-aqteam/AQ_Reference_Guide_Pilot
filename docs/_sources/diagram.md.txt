@@ -10,8 +10,6 @@ The following diagram provides an overview of the Reportnet air quality referenc
 
 ```{note}
 The numbering follows the table numbering used in the AQ eReporting data model, allowing corresponding tables to be identified consistently across both guides. The numbers are therefore not always consecutive: missing numbers correspond to reporting tables that are not included in the Reference data model. Additional Reference tables related to an existing numbered table are identified using letter suffixes (`A`, `B`, `C`, etc.).
-
-`ObservationMeasurementResultPNSD` is documented in the Reference Guide but is not currently included in the diagram, as its position and relationships within the data model are still being clarified.
 ```
 
 ## Tables shown in the diagram

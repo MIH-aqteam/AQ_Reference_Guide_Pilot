@@ -2,13 +2,31 @@
 set -e
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
-DOCS="$ROOT/docs"
+DOCS="$ROOT/build/html"
 OUT="$ROOT/AQ_eReference_Guide.pdf"
 COMBINED="$DOCS/_pdf_reference_guide.html"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
+echo "============================================================"
+echo "        AQ REFERENCE GUIDE - PDF GENERATION"
+echo "============================================================"
+echo
+echo "Refreshing the local HTML build..."
+echo
+
+if [ ! -x "$ROOT/local.sh" ]; then
+  echo "ERROR: local.sh not found or not executable."
+  exit 1
+fi
+
+"$ROOT/local.sh"
+
+echo
+echo "Local HTML build completed."
+echo
+
 if [ ! -d "$DOCS" ]; then
-  echo "ERROR: docs/ folder not found next to this script."
+  echo "ERROR: build/html folder was not created by the local build."
   exit 1
 fi
 if [ ! -x "$CHROME" ]; then
@@ -68,7 +86,8 @@ pages = [
     ("tables/ScenarioMeasure.html", "scenariomeasure", "ScenarioMeasure"),
     ("tables/Measure.html", "measure", "Measure"),
     ("tables/Documentation.html", "documentation", "Documentation"),
-    ("tables/ObservationMeasurementResultPNSD.html", "observationmeasurementresultpnsd", "ObservationMeasurementResultPNSD"),
+    # Temporarily disabled:
+    # ("tables/ObservationMeasurementResultPNSD.html", "observationmeasurementresultpnsd", "ObservationMeasurementResultPNSD"),
 ]
 
 page_to_anchor = {rel: f"pdf-{anchor}" for rel, anchor, _ in pages}
@@ -429,8 +448,22 @@ echo "Creating v8 PDF test with Chrome..."
   --print-to-pdf="$OUT" \
 "$COMBINED" \
 2>/dev/null
+
+STATIC_PDF="$ROOT/source/_static/AQ_eReference_Guide.pdf"
+
+if [ ! -f "$OUT" ]; then
+    echo
+    echo "ERROR: PDF was not created."
+    exit 1
+fi
+
+cp "$OUT" "$STATIC_PDF"
+
 echo
 echo "SUCCESS"
 echo "PDF created at:"
 echo "$OUT"
+echo
+echo "Website PDF updated at:"
+echo "$STATIC_PDF"
 echo "The guide source files were not modified."
