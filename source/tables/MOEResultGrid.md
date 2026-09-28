@@ -24,7 +24,7 @@
 | MRG_07 | PollutantId | int | numeric |  |  |  | N |
 | MRG_08 | End | datetime | datetime |  |  |  | N |
 | MRG_09 | Value | decimal(10,2) | numeric |  |  |  | N |
-| MRG_10 | Unit | varchar(10) | string |  |  |  | N |
+| MRG_10 | Unit | varchar(20) | string |  |  |  | N |
 | MRG_11 | Validity | int | numeric |  |  |  | N |
 | MRG_12 | ResultTime | datetime | datetime |  |  |  | N |
 | MRG_13 | Country | varchar(20) | string |  |  |  | N |

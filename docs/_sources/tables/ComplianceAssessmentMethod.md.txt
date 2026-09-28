@@ -23,16 +23,16 @@
 | CAM_15 | AttainmentId | varchar(50) | string | PK |  | [CompliancePlanLink](CompliancePlanLink.md)<br>[PollutionLevelAdjustment](PollutionLevelAdjustment.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-15-attainmentid) |
 | CAM_06 | PollutantId | int | numeric |  | [pollutant](https://dd.eionet.europa.eu/vocabulary/aq/pollutant/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-06-pollutantid) |
 | CAM_07 | AssessmentType | varchar(50) | string |  | [assessmenttype](https://dd.eionet.europa.eu/vocabulary/aq/assessmenttype/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-07-assessmenttype) |
-| CAM_08 | IsExceedance | varchar(5) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-08-isexceedance) |
+| CAM_08 | IsExceedance | char(1) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-08-isexceedance) |
 | CAM_10 | PollutionLevel | decimal(10,3) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-10-pollutionlevel) |
 | CAM_11 | PollutionLevelAdjusted | decimal(10,3) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-11-pollutionleveladjusted) |
 | CAM_26 | AbsoluteUncertaintyLimit | decimal(10,2) | numeric |  |  |  | N |
 | CAM_12 | RelativeUncertaintyLimit | decimal(10,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-12-relativeuncertaintylimit) |
 | CAM_13 | AssessmentMQI | decimal(5,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-13-assessmentmqi) |
-| CAM_14 | CorrectionFlag | bit | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-14-correctionflag) |
+| CAM_14 | CorrectionFlag | char(1) | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-14-correctionflag) |
 | CAM_16 | SRSId | varchar(50) | string |  |  | [SpatialRepresentativeness](SpatialRepresentativeness.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-16-srsid) |
 | CAM_17 | PreliminaryReason | varchar(50) | string |  | [exceedancereason](https://dd.eionet.europa.eu/vocabulary/aq/exceedancereason/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-17-preliminaryreason) |
-| CAM_18 | Deletion | bit | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-18-deletion) |
+| CAM_18 | Deletion | char(1) | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-18-deletion) |
 | CAM_09 | DataCoverage | decimal(5,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-09-datacoverage) |
 | CAM_19 | Country | varchar(20) | string |  |  |  | N |
 | CAM_20 | SamplingPointReferenceId | varchar(32) | string |  |  |  | N |

@@ -20,7 +20,7 @@
 | MOI_03 | DataAggregationProcessId | varchar(50) | string | PK |  |  | N |
 | MOI_04 | Year |  |  | PK |  |  | N |
 | MOI_05 | PollutantId | int | numeric |  |  |  | N |
-| MOI_06 | Unit | varchar(10) | string |  |  |  | N |
+| MOI_06 | Unit | varchar(20) | string |  |  |  | N |
 | MOI_07 | Validity | int | numeric |  |  |  | N |
 | MOI_08 | SpatialResolution | int | numeric |  |  |  | N |
 | MOI_09 | Country | varchar(20) | string |  |  |  | N |

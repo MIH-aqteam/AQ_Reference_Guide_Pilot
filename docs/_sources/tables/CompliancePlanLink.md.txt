@@ -20,7 +20,7 @@
 | CPL_03 | PlanId | varchar(50) | string | PK |  | [PlanScenario](PlanScenario.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-03-planid) |
 | CPL_04 | ScenarioId | varchar(50) | string | PK |  | [PlanScenario](PlanScenario.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-04-scenarioid) |
 | CPL_05 | SourceApportionmentId | varchar(50) | string | PK |  | [SourceApportionment](SourceApportionment.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-05-sourceapportionmentid) |
-| CPL_12 | Deletion | bit | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-12-deletion) |
+| CPL_12 | Deletion | char(1) | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/CompliancePlanLink.html#cpl-12-deletion) |
 | CPL_13 | Country | varchar(20) | string |  |  |  | N |
 | CPL_14 | ReportingYear | int | numeric |  |  |  | N |
 

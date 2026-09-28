@@ -22,7 +22,7 @@
 | OMI_11 | TimeResolution | varchar(10) | string | PK |  |  | N |
 | OMI_12 | Year |  |  | PK |  |  | N |
 | OMI_04 | PollutantId | int | numeric |  |  |  | N |
-| OMI_07 | Unit | varchar(10) | string |  |  |  | N |
+| OMI_07 | Unit | varchar(20) | string |  |  |  | N |
 | OMI_13 | Country | varchar(20) | string |  |  |  | N |
 | OMI_14 | SamplingPointReferenceId | varchar(32) | string |  |  |  | N |
 | OMI_15 | Pollutant | varchar(50) | string |  |  |  | N |
