@@ -16,16 +16,16 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | SRG_01 | CountryCode | varchar(2) | string | PK |  |  | N |
-| SRG_02 | SRSApplicationId | varchar(50) | string | PK |  |  | N |
+| SRG_02 | SRSApplicationId | varchar(100) | string | PK |  |  | N |
 | SRG_03 | X | bigint | numeric | PK |  |  | N |
 | SRG_04 | Y | bigint | numeric | PK |  |  | N |
-| SRG_05 | Area | ??? | ??? |  |  |  | N |
-| SRG_06 | Country | varchar(20) | string |  |  |  | N |
+| SRG_05 | Area | decimal(10,3) | ??? |  |  |  | N |
+| SRG_06 | Country | varchar(50) | string |  |  |  | N |
 | SRG_07 | GridNum10m | bigint | numeric |  |  |  | N |
 | SRG_08 | GridNum100m | bigint | numeric |  |  |  | N |
 | SRG_09 | GridNum1km | bigint | numeric |  |  |  | N |
 | SRG_10 | GridNum10km | bigint | numeric |  |  |  | N |
-| SRG_10 | Deletion | bit | boolean |  |  |  | N |
+| SRG_11 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}
 There is no corresponding table in the reporting data model. Therefore, all attributes are marked `N`.
@@ -133,7 +133,7 @@ Grid cell identifier in the EEA grid according to spatial resolution
 
 N - No corresponding reporting table.
 
-### SRG_10 - Deletion
+### SRG_11 - Deletion
 
 **Content**
 

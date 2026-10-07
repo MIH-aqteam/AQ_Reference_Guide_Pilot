@@ -20,9 +20,8 @@
 | DOC_03 | DocumentType | varchar(50) | string | PK | [documenttype](https://dd.eionet.europa.eu/vocabulary/aq/documenttype) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Documentation.html#doc-03-documenttype) |
 | DOC_04 | DocumentId | varchar(500) | string | PK |  | [MeasurementStation](MeasurementStation.md)<br>[SamplingProcess](SamplingProcess.md)<br>[ModelObjectiveEstimation](ModelObjectiveEstimation.md)<br>[AssessmentRegimeZone](AssessmentRegimeZone.md)<br>[CompliancePlanLink](CompliancePlanLink.md)<br>[SourceApportionment](SourceApportionment.md)<br>[PollutionLevelAdjustment](PollutionLevelAdjustment.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Documentation.html#doc-04-documentid) |
 | DOC_07 | ReportingTime | datetime | datetime | PK |  |  | N |
-| DOC_06 | DocumentOriginalURL | varchar(100) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Documentation.html#doc-06-documentoriginalurl) |
-| DOC_08 | Country | varchar(20) | string |  |  |  | N |
-| DOC_09 | DocumentURL | varchar(50) | string |  |  |  | N |
+| DOC_08 | Country | varchar(50) | string |  |  |  | N |
+| DOC_09 | DocumentURL | nvarchar(250) | string |  |  |  | N |
 | DOC_10 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}
@@ -84,16 +83,6 @@ Date and time when the information is submitted.
 **In Reporting**
 
 N - No corresponding reporting attribute.
-
-### DOC_06 - DocumentOriginalURL
-
-**Content**
-
-URL where doc is stored (MS)
-
-**In Reporting**
-
-[Y – View reporting attribute](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Documentation.html#doc-06-documentoriginalurl)
 
 ### DOC_08 - Country
 

@@ -16,7 +16,7 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | ARZ_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-01-countrycode) |
-| ARZ_02 | AssessmentRegimeId | varchar(50) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-02-assessmentregimeid) |
+| ARZ_02 | AssessmentRegimeId | varchar(100) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-02-assessmentregimeid) |
 | ARZ_03 | ZoneId | varchar(50) | string |  |  | [ZoneGeometry](ZoneGeometry.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-03-zoneid) |
 | ARZ_04 | ZoneNationalCode | varchar(50) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-04-zonenationalcode) |
 | ARZ_05 | ZoneArea | decimal(10,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-05-zonearea) |
@@ -34,9 +34,9 @@
 | ARZ_17 | ZoneResidentPopulation | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-17-zoneresidentpopulation) |
 | ARZ_18 | ClassificationYear | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-18-classificationyear) |
 | ARZ_19 | ClassificationDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-19-classificationdocumentid) |
-| ARZ_20 | Country | varchar(20) | string |  |  |  | N |
+| ARZ_20 | Country | varchar(50) | string |  |  |  | N |
 | ARZ_21 | ReportingYear | int | numeric |  |  |  | N |
-| ARZ_22 | Pollutant | varchar(50) | string |  |  |  | N |
+| ARZ_22 | Pollutant | varchar(100) | string |  |  |  | N |
 | ARZ_23 | RequiredFixedSamplingPoints | int | numeric |  |  |  | N |
 | ARZ_24 | ReportedFixedSamplingPoints | int | numeric |  |  |  | N |
 | ARZ_25 | RequiredFixedRandomSamplingPoints | int | numeric |  |  |  | N |
@@ -45,17 +45,17 @@
 | ARZ_28 | ReportedIndicativeSamplingPoints | int | numeric |  |  |  | N |
 | ARZ_29 | RequiredObjectiveEstimation | int | numeric |  |  |  | N |
 | ARZ_30 | ReportedObjectiveEstimation | int | numeric |  |  |  | N |
-| ARZ_31 | SRSCoverage | decimal(7,2) | numeric |  |  |  | N |
+| ARZ_31 | SRSCoverage | decimal(5,2) | numeric |  |  |  | N |
 | ARZ_32 | RequiredModels | int | numeric |  |  |  | N |
 | ARZ_33 | ReportedModels | int | numeric |  |  |  | N |
-| ARZ_34 | ModellingResultCoverage | decimal(7,2) | numeric |  |  |  | N |
-| ARZ_35 | AREZoneExceedanceStatus | bit | boolean |  |  |  | N |
-| ARZ_36 | ExccedanceAreaCoverage | decimal(7,2) | numeric |  |  |  | N |
+| ARZ_34 | ModellingResultCoverage | decimal(5,2) | numeric |  |  |  | N |
+| ARZ_35 | AREZoneExceedanceStatus | char(1) | boolean |  |  |  | N |
+| ARZ_36 | ExceedanceAreaCoverage | decimal(5,2) | numeric |  |  |  | N |
 | ARZ_37 | ReportedNumberOfMeasures | int | numeric |  |  |  | N |
 | ARZ_38 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}
-`Country`, `ReportingYear`, `Pollutant`, `RequiredFixedSamplingPoints`, `ReportedFixedSamplingPoints`, `RequiredFixedRandomSamplingPoints`, `ReportedFixedRandomSamplingPoints`, `RequiredIndicativeSamplingPoints`, `ReportedIndicativeSamplingPoints`, `RequiredObjectiveEstimation`, `ReportedObjectiveEstimation`, `SRSCoverage`, `RequiredModels`, `ReportedModels`, `ModellingResultCoverage`, `AREZoneExceedanceStatus`, `ExccedanceAreaCoverage`, `ReportedNumberOfMeasures` and `Deletion` are Reference attributes without a corresponding attribute in the reporting data model.
+`Country`, `ReportingYear`, `Pollutant`, `RequiredFixedSamplingPoints`, `ReportedFixedSamplingPoints`, `RequiredFixedRandomSamplingPoints`, `ReportedFixedRandomSamplingPoints`, `RequiredIndicativeSamplingPoints`, `ReportedIndicativeSamplingPoints`, `RequiredObjectiveEstimation`, `ReportedObjectiveEstimation`, `SRSCoverage`, `RequiredModels`, `ReportedModels`, `ModellingResultCoverage`, `AREZoneExceedanceStatus`, `ExceedanceAreaCoverage`, `ReportedNumberOfMeasures` and `Deletion` are Reference attributes without a corresponding attribute in the reporting data model.
 ```
 
 ## Attribute details
@@ -429,7 +429,7 @@ Indicator of the zone level exceedance status.
 
 N - No corresponding reporting attribute.
 
-### ARZ_36 - ExccedanceAreaCoverage
+### ARZ_36 - ExceedanceAreaCoverage
 
 **Content**
 

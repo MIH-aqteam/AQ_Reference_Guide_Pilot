@@ -30,7 +30,7 @@
 | SPL_13 | BuildingDistance | decimal(10,1) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-13-buildingdistance) |
 | SPL_14 | KerbDistance | decimal(10,1) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-14-kerbdistance) |
 | SPL_15 | EmissionSourceDistance | decimal(10,1) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-15-emissionsourcedistance) |
-| SPL_16 | Country | varchar(20) | string |  |  |  | N |
+| SPL_16 | Country | varchar(50) | string |  |  |  | N |
 | SPL_17 | X | bigint | numeric |  |  |  | N |
 | SPL_18 | Y | bigint | numeric |  |  |  | N |
 | SPL_19 | GridNum10m | bigint | numeric |  |  |  | N |
@@ -38,7 +38,7 @@
 | SPL_21 | GridNum1km | bigint | numeric |  |  |  | N |
 | SPL_22 | GridNum10km | bigint | numeric |  |  |  | N |
 | SPL_23 | Deletion | bit | boolean |  |  |  | N |
-| SPL_24 | SamplingPointType | varchar(20) | string |  |  |  | N |
+| SPL_24 | SamplingPointType | varchar(50) | string |  |  |  | N |
 
 ```{note}
 `Country`, `X`, `Y`, `GridNum10m`, `GridNum100m`, `GridNum1km`, `GridNum10km`, `Deletion` and `SamplingPointType` are Reference attributes without a corresponding attribute in the reporting data model.

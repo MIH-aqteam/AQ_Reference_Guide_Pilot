@@ -25,13 +25,13 @@
 | SPP_08 | Method | varchar(50) | string |  | [measurementmethod](https://dd.eionet.europa.eu/vocabulary/aq/measurementmethod/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-08-method) |
 | SPP_09 | Equipment | varchar(50) | string |  | [measurementequipment](https://dd.eionet.europa.eu/vocabulary/aq/measurementequipment/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-09-equipment) |
 | SPP_10 | AnalyticalTechnique | varchar(50) | string |  | [analyticaltechnique](https://dd.eionet.europa.eu/vocabulary/aq/analyticaltechnique/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-10-analyticaltechnique) |
-| SPP_11 | EquivalenceDemonstrated | varchar(50) | string |  | [equivalencedemonstrated](https://dd.eionet.europa.eu/vocabulary/aq/equivalencedemonstrated) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-11-equivalencedemonstrated) |
+| SPP_11 | EquivalenceDemonstrated | varchar(20) | string |  | [equivalencedemonstrated](https://dd.eionet.europa.eu/vocabulary/aq/equivalencedemonstrated) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-11-equivalencedemonstrated) |
 | SPP_12 | DataQualityDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-12-dataqualitydocumentid) |
 | SPP_13 | EquivalenceDemonstrationDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-13-equivalencedemonstrationdocumentid) |
 | SPP_14 | ProcessDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingProcess.html#spp-14-processdocumentid) |
-| SPP_15 | Country | varchar(20) | string |  |  |  | N |
+| SPP_15 | Country | varchar(50) | string |  |  |  | N |
 | SPP_16 | SamplingPointReferenceId | varchar(32) | string |  |  |  | N |
-| SPP_17 | Pollutant | varchar(50) | string |  |  |  | N |
+| SPP_17 | Pollutant | varchar(100) | string |  |  |  | N |
 | SPP_18 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}

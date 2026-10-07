@@ -18,15 +18,15 @@
 | AUT_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-01-countrycode) |
 | AUT_02 | AuthorityInstanceId | varchar(50) | string | PK | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-02-authorityinstanceid) |
 | AUT_03 | AuthorityRole | varchar(50) | string | PK | [authorityrole](https://dd.eionet.europa.eu/vocabulary/aq/authorityrole) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-03-authorityrole) |
-| AUT_04 | Email | varchar(50) | string | PK | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-04-email) |
+| AUT_04 | Email | varchar(150) | string | PK | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-04-email) |
 | AUT_11 | ReportingTime | datetime | datetime | PK | | | N |
 | AUT_05 | AuthorityInstance | varchar(20) | string | | [authorityinstance](https://dd.eionet.europa.eu/vocabulary/aq/authorityinstance) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-05-authorityinstance) |
-| AUT_06 | AuthorityName | varchar(150) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-06-authorityname) |
-| AUT_07 | AuthorityURL | varchar(150) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-07-authorityurl) |
-| AUT_08 | AuthorityAddress | varchar(150) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-08-authorityaddress) |
+| AUT_06 | AuthorityName | varchar(250) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-06-authorityname) |
+| AUT_07 | AuthorityURL | varchar(250) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-07-authorityurl) |
+| AUT_08 | AuthorityAddress | varchar(500) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-08-authorityaddress) |
 | AUT_09 | PersonName | varchar(150) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-09-personname) |
 | AUT_10 | AuthorityStatus | varchar(10) | string | | [authoritystatus](https://dd.eionet.europa.eu/vocabulary/aq/authoritystatus/) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Authority.html#aut-10-authoritystatus) |
-| AUT_12 | Country | varchar(20) | string | | | | N |
+| AUT_12 | Country | varchar(50) | string | | | | N |
 | AUT_13 | Deletion | bit | boolean | | | | N |
 
 ```{note}

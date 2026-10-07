@@ -16,12 +16,12 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | SRS_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-01-countrycode) |
-| SRS_02 | SRSId | varchar(50) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-02-srsid) |
-| SRS_03 | SRSApplicationId | varchar(50) | string | PK |  | SRSInline<br>SRSExternal | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-03-srsapplicationid) |
-| SRS_04 | SRSApplication | varchar(50) | string |  | [SRapplication](https://dd.eionet.europa.eu/vocabulary/aq/SRapplication) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-04-srsapplication) |
+| SRS_02 | SRSId | varchar(100) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-02-srsid) |
+| SRS_03 | SRSApplicationId | varchar(100) | string | PK |  | SRSInline<br>SRSExternal | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-03-srsapplicationid) |
+| SRS_04 | SRSApplication | varchar(10) | string |  | [SRapplication](https://dd.eionet.europa.eu/vocabulary/aq/SRapplication) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-04-srsapplication) |
 | SRS_05 | ResultEncoding | varchar(10) | string |  | [resultencoding](https://dd.eionet.europa.eu/vocabulary/aq/resultencoding/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-05-resultencoding) |
 | SRS_06 | RepresentativenessAssessmentMethodId | varchar(100) | string |  |  | [ModelObjectiveEstimation](ModelObjectiveEstimation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SpatialRepresentativeness.html#srs-06-representativenessassessmentmethodid) |
-| SRS_07 | Country | varchar(20) | string |  |  |  | N |
+| SRS_07 | Country | varchar(50) | string |  |  |  | N |
 | SRS_08 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}

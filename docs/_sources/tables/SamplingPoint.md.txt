@@ -20,9 +20,9 @@
 | SPO_03 | SamplingPointReferenceId | varchar(32) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-03-samplingpointreferenceid) |
 | SPO_04 | PollutantId | int | numeric |  | [pollutant](https://dd.eionet.europa.eu/vocabulary/aq/pollutant/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-04-pollutantid) |
 | SPO_05 | StationEoICode | varchar(10) | string |  |  | [MeasurementStation](MeasurementStation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPoint.html#spo-05-stationeoicode) |
-| SPO_06 | Country | varchar(20) | string |  |  |  | N |
-| SPO_07 | SamplingPointStatus | bit | boolean |  |  |  | N |
-| SPO_08 | Pollutant | varchar(50) | string |  |  |  | N |
+| SPO_06 | Country | varchar(50) | string |  |  |  | N |
+| SPO_07 | SamplingPointStatus | varchar(10) | boolean |  |  |  | N |
+| SPO_08 | Pollutant | varchar(100) | string |  |  |  | N |
 | SPO_09 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}

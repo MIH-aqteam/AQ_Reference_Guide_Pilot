@@ -16,11 +16,11 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | ADJ_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-01-countrycode) |
-| ADJ_02 | AttainmentId | varchar(50) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-02-attainmentid) |
-| ADJ_03 | AdjustmentSource | varchar(50) | string | PK | [adjustmentsourcetype](https://dd.eionet.europa.eu/vocabulary/aq/adjustmentsourcetype/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-03-adjustmentsource) |
+| ADJ_02 | AttainmentId | varchar(100) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-02-attainmentid) |
+| ADJ_03 | AdjustmentSource | varchar(5) | string | PK | [adjustmentsourcetype](https://dd.eionet.europa.eu/vocabulary/aq/adjustmentsourcetype/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-03-adjustmentsource) |
 | ADJ_04 | AdjustmentAssessmentMethodId | varchar(100) | string |  |  | [ModelObjectiveEstimation](ModelObjectiveEstimation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-04-adjustmentassessmentmethodid) |
 | ADJ_05 | AdjustmentDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PollutionLevelAdjustment.html#adj-05-adjustmentdocumentid) |
-| ADJ_06 | Country | varchar(20) | string |  |  |  | N |
+| ADJ_06 | Country | varchar(50) | string |  |  |  | N |
 | ADJ_07 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}

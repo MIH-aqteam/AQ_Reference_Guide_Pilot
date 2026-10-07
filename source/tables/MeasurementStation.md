@@ -25,9 +25,9 @@
 | STA_07 | StationNationalCode | varchar(50) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/MeasurementStation.html#sta-07-stationnationalcode) |
 | STA_08 | StationName | varchar(50) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/MeasurementStation.html#sta-08-stationname) |
 | STA_09 | NetworkDocumentId | varchar(150) | string | | | Documentation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/MeasurementStation.html#sta-09-networkdocumentid) |
-| STA_11 | Country | varchar(20) | string | | | | N |
-| STA_12 | City | | | | | | N |
-| STA_13 | CityCode | | | | | | N |
+| STA_11 | Country | varchar(50) | string | | | | N |
+| STA_12 | City | varchar(100) | string | | | | N |
+| STA_13 | CityCode | varchar(20) | string | | | | N |
 | STA_14 | Deletion | bit | boolean | | | | N |
 
 ```{note}

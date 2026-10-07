@@ -150,7 +150,7 @@
 <li><p><a class="reference internal" href="#srg-08-gridnum100m" id="id10">SRG_08 - GridNum100m</a></p></li>
 <li><p><a class="reference internal" href="#srg-09-gridnum1km" id="id11">SRG_09 - GridNum1km</a></p></li>
 <li><p><a class="reference internal" href="#srg-10-gridnum10km" id="id12">SRG_10 - GridNum10km</a></p></li>
-<li><p><a class="reference internal" href="#srg-10-deletion" id="id13">SRG_10 - Deletion</a></p></li>
+<li><p><a class="reference internal" href="#srg-11-deletion" id="id13">SRG_11 - Deletion</a></p></li>
 </ul>
 </li>
 </ul>
@@ -181,7 +181,7 @@
 </tr>
 <tr class="row-odd"><td><p>SRG_02</p></td>
 <td><p>SRSApplicationId</p></td>
-<td><p>varchar(50)</p></td>
+<td><p>varchar(100)</p></td>
 <td><p>string</p></td>
 <td><p>PK</p></td>
 <td><p></p></td>
@@ -208,7 +208,7 @@
 </tr>
 <tr class="row-even"><td><p>SRG_05</p></td>
 <td><p>Area</p></td>
-<td><p>???</p></td>
+<td><p>decimal(10,3)</p></td>
 <td><p>???</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -217,7 +217,7 @@
 </tr>
 <tr class="row-odd"><td><p>SRG_06</p></td>
 <td><p>Country</p></td>
-<td><p>varchar(20)</p></td>
+<td><p>varchar(50)</p></td>
 <td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -260,7 +260,7 @@
 <td><p></p></td>
 <td class="text-center"><p>N</p></td>
 </tr>
-<tr class="row-even"><td><p>SRG_10</p></td>
+<tr class="row-even"><td><p>SRG_11</p></td>
 <td><p>Deletion</p></td>
 <td><p>bit</p></td>
 <td><p>boolean</p></td>
@@ -348,8 +348,8 @@
 <p><strong>In Reporting</strong></p>
 <p>N - No corresponding reporting table.</p>
 </section>
-<section id="srg-10-deletion">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">SRG_10 - Deletion</a><a class="headerlink" href="#srg-10-deletion" title="Link to this heading"></a></h3>
+<section id="srg-11-deletion">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">SRG_11 - Deletion</a><a class="headerlink" href="#srg-11-deletion" title="Link to this heading"></a></h3>
 <p><strong>Content</strong></p>
 <p>Flag to indicate that this element must be deleted.</p>
 <p><strong>In Reporting</strong></p>

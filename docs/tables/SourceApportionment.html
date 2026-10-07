@@ -142,11 +142,11 @@
 <ul>
 <li><p><a class="reference internal" href="#sap-01-countrycode" id="id3">SAP_01 - CountryCode</a></p></li>
 <li><p><a class="reference internal" href="#sap-02-sourceapportionmentid" id="id4">SAP_02 - SourceApportionmentId</a></p></li>
-<li><p><a class="reference internal" href="#sap-03-contributiontype" id="id5">SAP_03 - ContributionType</a></p></li>
+<li><p><a class="reference internal" href="#sap-03-componenttype" id="id5">SAP_03 - ComponentType</a></p></li>
 <li><p><a class="reference internal" href="#sap-04-spatialscale" id="id6">SAP_04 - SpatialScale</a></p></li>
 <li><p><a class="reference internal" href="#sap-05-sourcesector" id="id7">SAP_05 - SourceSector</a></p></li>
 <li><p><a class="reference internal" href="#sap-06-pollutantid" id="id8">SAP_06 - PollutantId</a></p></li>
-<li><p><a class="reference internal" href="#sap-07-contribution" id="id9">SAP_07 - Contribution</a></p></li>
+<li><p><a class="reference internal" href="#sap-07-componentvalue" id="id9">SAP_07 - ComponentValue</a></p></li>
 <li><p><a class="reference internal" href="#sap-08-sourceapportionmentdocumentid" id="id10">SAP_08 - SourceApportionmentDocumentId</a></p></li>
 <li><p><a class="reference internal" href="#sap-09-country" id="id11">SAP_09 - Country</a></p></li>
 <li><p><a class="reference internal" href="#sap-10-pollutant" id="id12">SAP_10 - Pollutant</a></p></li>
@@ -189,13 +189,13 @@
 <td class="text-center"><p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-02-sourceapportionmentid">Y</a></p></td>
 </tr>
 <tr class="row-even"><td><p>SAP_03</p></td>
-<td><p>ContributionType</p></td>
+<td><p>ComponentType</p></td>
 <td><p>varchar(20)</p></td>
 <td><p>string</p></td>
 <td><p>PK</p></td>
 <td><p><a class="reference external" href="https://dd.eionet.europa.eu/vocabulary/aq/contributiontype/view">contributiontype</a></p></td>
 <td><p></p></td>
-<td class="text-center"><p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-03-contributiontype">Y</a></p></td>
+<td class="text-center"><p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-03-componenttype">Y</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>SAP_04</p></td>
 <td><p>SpatialScale</p></td>
@@ -225,13 +225,13 @@
 <td class="text-center"><p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-06-pollutantid">Y</a></p></td>
 </tr>
 <tr class="row-even"><td><p>SAP_07</p></td>
-<td><p>Contribution</p></td>
+<td><p>ComponentValue</p></td>
 <td><p>decimal(8,2)</p></td>
 <td><p>numeric</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td class="text-center"><p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-07-contribution">Y</a></p></td>
+<td class="text-center"><p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-07-componentvalue">Y</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>SAP_08</p></td>
 <td><p>SourceApportionmentDocumentId</p></td>
@@ -292,12 +292,12 @@
 <p><strong>In Reporting</strong></p>
 <p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-02-sourceapportionmentid">Y – View reporting attribute</a></p>
 </section>
-<section id="sap-03-contributiontype">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink">SAP_03 - ContributionType</a><a class="headerlink" href="#sap-03-contributiontype" title="Link to this heading"></a></h3>
+<section id="sap-03-componenttype">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">SAP_03 - ComponentType</a><a class="headerlink" href="#sap-03-componenttype" title="Link to this heading"></a></h3>
 <p><strong>Content</strong></p>
 <p>Type of contribution (e.g.,  background, increment).</p>
 <p><strong>In Reporting</strong></p>
-<p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-03-contributiontype">Y – View reporting attribute</a></p>
+<p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-03-componenttype">Y – View reporting attribute</a></p>
 </section>
 <section id="sap-04-spatialscale">
 <h3><a class="toc-backref" href="#id6" role="doc-backlink">SAP_04 - SpatialScale</a><a class="headerlink" href="#sap-04-spatialscale" title="Link to this heading"></a></h3>
@@ -322,14 +322,14 @@
 <p><strong>In Reporting</strong></p>
 <p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-06-pollutantid">Y – View reporting attribute</a></p>
 </section>
-<section id="sap-07-contribution">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">SAP_07 - Contribution</a><a class="headerlink" href="#sap-07-contribution" title="Link to this heading"></a></h3>
+<section id="sap-07-componentvalue">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">SAP_07 - ComponentValue</a><a class="headerlink" href="#sap-07-componentvalue" title="Link to this heading"></a></h3>
 <p><strong>Content</strong></p>
 <p>Estimated contribution of the specified source sector to air pollution levels [%].</p>
 <p><strong>Remarks</strong></p>
 <p>The value is understood as applicable to AirPollutionLevel adjusted for natural sources. Therefore contributions should not include the natural sources, should be given as % and sum up to 100% within SourceAppId.</p>
 <p><strong>In Reporting</strong></p>
-<p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-07-contribution">Y – View reporting attribute</a></p>
+<p><a class="reference external" href="https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-07-componentvalue">Y – View reporting attribute</a></p>
 </section>
 <section id="sap-08-sourceapportionmentdocumentid">
 <h3><a class="toc-backref" href="#id10" role="doc-backlink">SAP_08 - SourceApportionmentDocumentId</a><a class="headerlink" href="#sap-08-sourceapportionmentdocumentid" title="Link to this heading"></a></h3>

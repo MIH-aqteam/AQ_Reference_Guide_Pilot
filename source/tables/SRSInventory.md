@@ -16,11 +16,11 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | SRY_01 | CountryCode | varchar(2) | string | PK |  |  | N |
-| SRY_02 | SRSApplicationId | varchar(50) | string | PK |  |  | N |
-| SRY_03 | Country | varchar(20) | string |  |  |  | N |
+| SRY_02 | SRSApplicationId | varchar(100) | string | PK |  |  | N |
+| SRY_03 | Country | varchar(50) | string |  |  |  | N |
 | SRY_04 | SpatialResolution | int | numeric |  |  |  | N |
-| SRY_05 | ValueCount | ??? | ??? |  |  |  | N |
-| SRY_06 | RawDataURL | varchar(50) | string |  |  |  | N |
+| SRY_05 | ValueCount | bigint | ??? |  |  |  | N |
+| SRY_06 | RawDataURL | varchar(250) | string |  |  |  | N |
 | SRY_07 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}

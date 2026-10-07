@@ -25,9 +25,9 @@
 | MOE_08 | GenericMQI | decimal(5,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-08-genericmqi) |
 | MOE_09 | DataQualityDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-09-dataqualitydocumentid) |
 | MOE_10 | MethodDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ModelObjectiveEstimation.html#moe-10-methoddocumentid) |
-| MOE_11 | Country | varchar(20) | string |  |  |  | N |
-| MOE_12 | Pollutant | varchar(50) | string |  |  |  | N |
-| MOE_13 | DataAggregationProcess | varchar(XXX) | string |  |  |  | N |
+| MOE_11 | Country | varchar(50) | string |  |  |  | N |
+| MOE_12 | Pollutant | varchar(100) | string |  |  |  | N |
+| MOE_13 | DataAggregationProcess | varchar(100) | string |  |  |  | N |
 | MOE_14 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}
