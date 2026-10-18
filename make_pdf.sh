@@ -86,6 +86,12 @@ pages = [
     ("tables/ScenarioMeasure.html", "scenariomeasure", "ScenarioMeasure"),
     ("tables/Measure.html", "measure", "Measure"),
     ("tables/Documentation.html", "documentation", "Documentation"),
+    ("tables/AdminBoundaryGrid.html", "adminboundarygrid", "AdminBoundaryGrid"),
+    ("tables/AdminBoundaryLookup.html", "adminboundarylookup", "AdminBoundaryLookup"),
+    ("tables/CountryAreaPopulation.html", "countryareapopulation", "CountryAreaPopulation"),
+    ("tables/PopulationGrid.html", "populationgrid", "PopulationGrid"),
+    ("tables/Vocabulary.html", "vocabulary", "Vocabulary"),
+    ("tables/VocabularyRelation.html", "vocabularyrelation", "VocabularyRelation"),
     # Temporarily disabled:
     # ("tables/ObservationMeasurementResultPNSD.html", "observationmeasurementresultpnsd", "ObservationMeasurementResultPNSD"),
 ]
@@ -355,18 +361,18 @@ extra_css = r'''
       border: 0 !important;
     }
 
-    /* Darth Vader cards: explicit print rules, not dependent on hover/screen CSS. */
+    /* Reference-only cards: match the lighter grey source CSS in print. */
     a.reporting-table-card.reference-only-table {
-      background: #2b2f33 !important;
-      border-color: #111417 !important;
-      box-shadow: inset 0 0 0 1000px #2b2f33, 0 3px 8px rgba(0,0,0,.28) !important;
+      background: #DCE2E7 !important;
+      border-color: #9AA8B4 !important;
+      box-shadow: inset 0 0 0 1000px #DCE2E7 !important;
     }
     a.reporting-table-card.reference-only-table .reporting-table-title {
-      color: #ffffff !important;
+      color: #25313B !important;
     }
     a.reporting-table-card.reference-only-table .reporting-table-image {
-      background: #3a3f44 !important;
-      box-shadow: inset 0 0 0 1000px #3a3f44 !important;
+      background: #DCE2E7 !important;
+      box-shadow: inset 0 0 0 1000px #DCE2E7 !important;
     }
     a.reporting-table-card.reference-only-table .reference-only-badge,
     .reference-only-badge {
@@ -375,8 +381,8 @@ extra_css = r'''
       margin: 2px 0 4px !important;
       padding: 2px 5px !important;
       color: #ffffff !important;
-      background: #0d0f11 !important;
-      box-shadow: inset 0 0 0 1000px #0d0f11 !important;
+      background: #C3CED7 !important;
+      box-shadow: inset 0 0 0 1000px #C3CED7 !important;
       border: 1px solid #686d72 !important;
       border-radius: 3px !important;
       font-size: 6.2pt !important;
