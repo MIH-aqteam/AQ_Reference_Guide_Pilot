@@ -29,10 +29,10 @@
 | CAM_26 | AbsoluteUncertaintyValue | decimal(10,2) | numeric |  |  |  | N |
 | CAM_12 | RelativeUncertaintyValue | decimal(5,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-12-relativeuncertaintyvalue) |
 | CAM_13 | AssessmentMQI | decimal(5,3) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-13-assessmentmqi) |
-| CAM_14 | CorrectionFlag | char(1) | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-14-correctionflag) |
+| CAM_14 | CorrectionFlag | char(1) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-14-correctionflag) |
 | CAM_16 | SRSId | varchar(100) | string |  |  | [SpatialRepresentativeness](SpatialRepresentativeness.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-16-srsid) |
 | CAM_17 | PreliminaryReason | varchar(5) | string |  | [exceedancereason](https://dd.eionet.europa.eu/vocabulary/aq/exceedancereason/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-17-preliminaryreason) |
-| CAM_18 | Deletion | char(1) | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-18-deletion) |
+| CAM_18 | Deletion | char(1) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-18-deletion) |
 | CAM_09 | DataCoverage | decimal(5,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ComplianceAssessmentMethod.html#cam-09-datacoverage) |
 | CAM_19 | Country | varchar(50) | string |  |  |  | N |
 | CAM_20 | SamplingPointReferenceId | varchar(32) | string |  |  |  | N |
@@ -41,9 +41,12 @@
 | CAM_23 | EEAAdjustmentEstimation | decimal(10,2) | ??? |  |  |  | N |
 | CAM_24 | EEAExceedanceAssessment | char(1) | string |  |  |  | N |
 | CAM_25 | EEAMQIEstimation | decimal(5,3) | ??? |  |  |  | N |
+| CAM_27 | AssessmentRegimeId_Original | varchar(100) | string |  |  |  | N |
 
 ```{note}
 `AbsoluteUncertaintyValue`, `Country`, `SamplingPointReferenceId`, `Pollutant`, `DataAggregationProcess`, `EEAAdjustmentEstimation`, `EEAExceedanceAssessment` and `EEAMQIEstimation` are Reference attributes without a corresponding attribute in the reporting data model.
+
+`AssessmentRegimeId_Original` — if intended to be public.
 ```
 
 ## Attribute details
@@ -348,3 +351,4 @@ N - No corresponding reporting attribute.
 
 N - No corresponding reporting attribute.
 
+### CAM_27 - AssessmentRegimeId_Original

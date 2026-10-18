@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=6c1e2601" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=48cd5d37" />
 
   
     <link rel="shortcut icon" href="../_static/favicon.png"/>
@@ -93,6 +93,12 @@
 <li class="toctree-l2"><a class="reference internal" href="ScenarioMeasure.html">ScenarioMeasure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Measure.html">Measure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Documentation.html">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AdminBoundaryGrid.html">AdminBoundaryGrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AdminBoundaryLookup.html">AdminBoundaryLookup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CountryAreaPopulation.html">CountryAreaPopulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PopulationGrid.html">PopulationGrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VocabularyRelation.html">VocabularyRelation</a></li>
 </ul>
 </li>
 </ul>
@@ -159,6 +165,8 @@
 <li><p><a class="reference internal" href="#omi-21-sourcedataflow" id="id19">OMI_21 - SourceDataFlow</a></p></li>
 <li><p><a class="reference internal" href="#omi-22-rawdataurl" id="id20">OMI_22 - RawDataURL</a></p></li>
 <li><p><a class="reference internal" href="#omi-23-deletion" id="id21">OMI_23 - Deletion</a></p></li>
+<li><p><a class="reference internal" href="#omi-24-size" id="id22">OMI_24 - Size</a></p></li>
+<li><p><a class="reference internal" href="#omi-25-parquetlastupdated" id="id23">OMI_25 - ParquetLastUpdated</a></p></li>
 </ul>
 </li>
 </ul>
@@ -225,7 +233,7 @@
 </tr>
 <tr class="row-odd"><td><p>OMI_12</p></td>
 <td><p>Year</p></td>
-<td><p></p></td>
+<td><p>int</p></td>
 <td><p></p></td>
 <td><p>PK</p></td>
 <td><p></p></td>
@@ -252,7 +260,7 @@
 </tr>
 <tr class="row-even"><td><p>OMI_13</p></td>
 <td><p>Country</p></td>
-<td><p>varchar(20)</p></td>
+<td><p>varchar(50)</p></td>
 <td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -270,7 +278,7 @@
 </tr>
 <tr class="row-even"><td><p>OMI_15</p></td>
 <td><p>Pollutant</p></td>
-<td><p>varchar(50)</p></td>
+<td><p>varchar(100)</p></td>
 <td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -279,7 +287,7 @@
 </tr>
 <tr class="row-odd"><td><p>OMI_16</p></td>
 <td><p>ValueCount</p></td>
-<td><p>int</p></td>
+<td><p>bigint</p></td>
 <td><p>numeric</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -306,7 +314,7 @@
 </tr>
 <tr class="row-even"><td><p>OMI_19</p></td>
 <td><p>MinResultTimeInYear</p></td>
-<td><p>???</p></td>
+<td><p>datetime</p></td>
 <td><p>???</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -315,7 +323,7 @@
 </tr>
 <tr class="row-odd"><td><p>OMI_20</p></td>
 <td><p>MaxResultTimeInYear</p></td>
-<td><p>???</p></td>
+<td><p>datetime</p></td>
 <td><p>???</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -324,7 +332,7 @@
 </tr>
 <tr class="row-even"><td><p>OMI_21</p></td>
 <td><p>SourceDataFlow</p></td>
-<td><p>???</p></td>
+<td><p>varchar(10)</p></td>
 <td><p>???</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -333,7 +341,7 @@
 </tr>
 <tr class="row-odd"><td><p>OMI_22</p></td>
 <td><p>RawDataURL</p></td>
-<td><p>varchar(50)</p></td>
+<td><p>varchar(250)</p></td>
 <td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -349,11 +357,30 @@
 <td><p></p></td>
 <td class="text-center"><p>N</p></td>
 </tr>
+<tr class="row-odd"><td><p>OMI_24</p></td>
+<td><p>Size</p></td>
+<td><p>int</p></td>
+<td><p>numeric</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>OMI_25</p></td>
+<td><p>ParquetLastUpdated</p></td>
+<td><p>datetime</p></td>
+<td><p>datetime</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p>N</p></td>
+</tr>
 </tbody>
 </table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>There is no corresponding table in the reporting data model. Therefore, all attributes are marked <code class="docutils literal notranslate"><span class="pre">N</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Size</span></code>, <code class="docutils literal notranslate"><span class="pre">ParquetLastUpdated</span></code> — if intended to be public.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -494,6 +521,12 @@
 <p>Flag to indicate that this element must be deleted.</p>
 <p><strong>In Reporting</strong></p>
 <p>N - No corresponding reporting table.</p>
+</section>
+<section id="omi-24-size">
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">OMI_24 - Size</a><a class="headerlink" href="#omi-24-size" title="Link to this heading"></a></h3>
+</section>
+<section id="omi-25-parquetlastupdated">
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">OMI_25 - ParquetLastUpdated</a><a class="headerlink" href="#omi-25-parquetlastupdated" title="Link to this heading"></a></h3>
 </section>
 </section>
 </section>

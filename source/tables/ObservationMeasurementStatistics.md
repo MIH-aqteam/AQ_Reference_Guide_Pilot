@@ -21,18 +21,18 @@
 | OMS_04 | End | datetime | datetime | PK |  |  | N |
 | OMS_05 | DataAggregationProcessId | varchar(50) | string | PK |  |  | N |
 | OMS_06 | PollutantId | int | numeric |  |  |  | N |
-| OMS_07 | Value | decimal(10,2) | numeric |  |  |  | N |
+| OMS_07 | Value | decimal(10,3) | numeric |  |  |  | N |
 | OMS_08 | Unit | varchar(20) | string |  |  |  | N |
 | OMS_09 | Validity | int | numeric |  |  |  | N |
 | OMS_10 | Verification | int | numeric |  |  |  | N |
 | OMS_11 | DataCapture | decimal(5,2) | numeric |  |  |  | N |
 | OMS_12 | ResultTime | datetime | datetime |  |  |  | N |
-| OMS_13 | Country | varchar(20) | string |  |  |  | N |
+| OMS_13 | Country | varchar(50) | string |  |  |  | N |
 | OMS_14 | SamplingPointReferenceId | varchar(32) | string |  |  |  | N |
-| OMS_15 | Pollutant | varchar(50) | string |  |  |  | N |
-| OMS_16 | DataAggregationProcess | varchar(xxx) | string |  |  |  | N |
+| OMS_15 | Pollutant | varchar(100) | string |  |  |  | N |
+| OMS_16 | DataAggregationProcess | varchar(100) | string |  |  |  | N |
 | OMS_17 | DataCoverage | decimal(5,2) | numeric |  |  |  | N |
-| OMS_18 | SourceDataFlow | ? | ? |  |  |  | N |
+| OMS_18 | SourceDataFlow | varchar(10) | ? |  |  |  | N |
 | OMS_19 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}

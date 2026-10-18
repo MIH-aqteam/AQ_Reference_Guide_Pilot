@@ -29,7 +29,7 @@
 | ARZ_12 | ReportingMetric | varchar(50) | string |  | [reportingmetric](https://dd.eionet.europa.eu/vocabulary/aq/reportingmetric/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-12-reportingmetric) |
 | ARZ_13 | AssessmentThresholdExceedance | varchar(20) | string |  | [assessmentthresholdexceedance](https://dd.eionet.europa.eu/vocabulary/aq/assessmentthresholdexceedance/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-13-assessmentthresholdexceedance) |
 | ARZ_14 | PostponementYear | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-14-postponementyear) |
-| ARZ_15 | FixedMeasurementReduction | char(1) | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-15-fixedmeasurementreduction) |
+| ARZ_15 | FixedMeasurementReduction | char(1) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-15-fixedmeasurementreduction) |
 | ARZ_16 | ZoneResidentPopulationYear | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-16-zoneresidentpopulationyear) |
 | ARZ_17 | ZoneResidentPopulation | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-17-zoneresidentpopulation) |
 | ARZ_18 | ClassificationYear | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/AssessmentRegimeZone.html#arz-18-classificationyear) |
@@ -49,13 +49,16 @@
 | ARZ_32 | RequiredModels | int | numeric |  |  |  | N |
 | ARZ_33 | ReportedModels | int | numeric |  |  |  | N |
 | ARZ_34 | ModellingResultCoverage | decimal(5,2) | numeric |  |  |  | N |
-| ARZ_35 | AREZoneExceedanceStatus | char(1) | boolean |  |  |  | N |
+| ARZ_35 | AREZoneExceedanceStatus | char(1) | string |  |  |  | N |
 | ARZ_36 | ExceedanceAreaCoverage | decimal(5,2) | numeric |  |  |  | N |
 | ARZ_37 | ReportedNumberOfMeasures | int | numeric |  |  |  | N |
 | ARZ_38 | Deletion | bit | boolean |  |  |  | N |
+| ARZ_39 | AssessmentRegimeId_Original | varchar(100) | string |  |  |  | N |
 
 ```{note}
 `Country`, `ReportingYear`, `Pollutant`, `RequiredFixedSamplingPoints`, `ReportedFixedSamplingPoints`, `RequiredFixedRandomSamplingPoints`, `ReportedFixedRandomSamplingPoints`, `RequiredIndicativeSamplingPoints`, `ReportedIndicativeSamplingPoints`, `RequiredObjectiveEstimation`, `ReportedObjectiveEstimation`, `SRSCoverage`, `RequiredModels`, `ReportedModels`, `ModellingResultCoverage`, `AREZoneExceedanceStatus`, `ExceedanceAreaCoverage`, `ReportedNumberOfMeasures` and `Deletion` are Reference attributes without a corresponding attribute in the reporting data model.
+
+`AssessmentRegimeId_Original` — if intended to be public.
 ```
 
 ## Attribute details
@@ -459,3 +462,4 @@ Flag to indicate that this element must be deleted..
 
 N - No corresponding reporting attribute.
 
+### ARZ_39 - AssessmentRegimeId_Original

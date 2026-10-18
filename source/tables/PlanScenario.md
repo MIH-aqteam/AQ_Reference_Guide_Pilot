@@ -16,19 +16,19 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | PSC_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-01-countrycode) |
-| PSC_02 | PlanId | varchar(50) | string | PK |  | [CompliancePlanLink](CompliancePlanLink.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-02-planid) |
-| PSC_03 | ScenarioId | varchar(50) | string | PK |  | [CompliancePlanLink](CompliancePlanLink.md)<br>[ScenarioMeasure](ScenarioMeasure.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-03-scenarioid) |
+| PSC_02 | PlanId | varchar(100) | string | PK |  | [CompliancePlanLink](CompliancePlanLink.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-02-planid) |
+| PSC_03 | ScenarioId | varchar(100) | string | PK |  | [CompliancePlanLink](CompliancePlanLink.md)<br>[ScenarioMeasure](ScenarioMeasure.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-03-scenarioid) |
 | PSC_04 | ScenarioCategory | varchar(20) | string | PK | [scenariocategory](https://dd.eionet.europa.eu/vocabulary/aq/scenariocategory) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-04-scenariocategory) |
-| PSC_05 | ScenarioNationalCode | varchar(50) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-05-scenarionationalcode) |
+| PSC_05 | ScenarioNationalCode | varchar(100) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-05-scenarionationalcode) |
 | PSC_06 | PollutantId | int | numeric |  | [pollutant](https://dd.eionet.europa.eu/vocabulary/aq/pollutant/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-06-pollutantid) |
 | PSC_07 | DataAggregationProcessId | varchar(50) | string |  | [aggregationprocess](https://dd.eionet.europa.eu/vocabulary/aq/aggregationprocess/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-07-dataaggregationprocessid) |
 | PSC_08 | ScenarioYear | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-08-scenarioyear) |
-| PSC_09 | ScenarioPollutionLevel | decimal(10,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-09-scenariopollutionlevel) |
+| PSC_09 | ScenarioAirPollutionLevel | decimal(10,3) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-09-scenarioairpollutionlevel) |
 | PSC_10 | ExposedPopulation | int | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-10-exposedpopulation) |
 | PSC_11 | ScenarioAssessmentMethodId | varchar(100) | string |  |  | [ModelObjectiveEstimation](ModelObjectiveEstimation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-11-scenarioassessmentmethodid) |
-| PSC_12 | Country | varchar(20) | string |  |  |  | N |
-| PSC_13 | Pollutant | varchar(50) | string |  |  |  | N |
-| PSC_14 | DataAggregationProcess | varchar(XXX) | string |  |  |  | N |
+| PSC_12 | Country | varchar(50) | string |  |  |  | N |
+| PSC_13 | Pollutant | varchar(100) | string |  |  |  | N |
+| PSC_14 | DataAggregationProcess | varchar(100) | string |  |  |  | N |
 | PSC_15 | EEAExposedPopulation | int | numeric |  |  |  | N |
 | PSC_16 | Deletion | bit | boolean |  |  |  | N |
 
@@ -132,7 +132,7 @@ The calendar year for which the scenario has been modeled.
 
 [Y – View reporting attribute](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-08-scenarioyear)
 
-### PSC_09 - ScenarioPollutionLevel
+### PSC_09 - ScenarioAirPollutionLevel
 
 **Content**
 
@@ -140,7 +140,7 @@ Estimated air pollution level in the scenario year.
 
 **In Reporting**
 
-[Y – View reporting attribute](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-09-scenariopollutionlevel)
+[Y – View reporting attribute](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/PlanScenario.html#psc-09-scenarioairpollutionlevel)
 
 ### PSC_10 - ExposedPopulation
 

@@ -16,15 +16,15 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | SAP_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-01-countrycode) |
-| SAP_02 | SourceApportionmentId | varchar(50) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-02-sourceapportionmentid) |
+| SAP_02 | SourceApportionmentId | varchar(100) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-02-sourceapportionmentid) |
 | SAP_03 | ComponentType | varchar(20) | string | PK | [contributiontype](https://dd.eionet.europa.eu/vocabulary/aq/contributiontype/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-03-componenttype) |
 | SAP_04 | SpatialScale | varchar(50) | string | PK | [spatialscale](https://dd.eionet.europa.eu/vocabulary/aq/spatialscale) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-04-spatialscale) |
 | SAP_05 | SourceSector | varchar(50) | string | PK | [aq/sourcesectors](https://dd.eionet.europa.eu/vocabulary/aq/sourcesectors) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-05-sourcesector) |
 | SAP_06 | PollutantId | int | numeric |  | [pollutant](https://dd.eionet.europa.eu/vocabulary/aq/pollutant/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-06-pollutantid) |
-| SAP_07 | ComponentValue | decimal(8,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-07-componentvalue) |
+| SAP_07 | ComponentValue | decimal(5,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-07-componentvalue) |
 | SAP_08 | SourceApportionmentDocumentId | varchar(150) | string |  |  | [Documentation](Documentation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SourceApportionment.html#sap-08-sourceapportionmentdocumentid) |
-| SAP_09 | Country | varchar(20) | string |  |  |  | N |
-| SAP_10 | Pollutant | varchar(50) | string |  |  |  | N |
+| SAP_09 | Country | varchar(50) | string |  |  |  | N |
+| SAP_10 | Pollutant | varchar(100) | string |  |  |  | N |
 | SAP_11 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}

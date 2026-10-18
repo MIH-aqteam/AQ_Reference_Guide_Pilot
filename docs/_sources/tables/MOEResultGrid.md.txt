@@ -19,24 +19,24 @@
 | MRG_02 | AssessmentMethodId | varchar(100) | string | PK |  |  | N |
 | MRG_03 | Start | datetime | datetime | PK |  |  | N |
 | MRG_04 | DataAggregationProcessId | varchar(50) | string | PK |  |  | N |
-| MRG_05 | X | bigint | numeric | PK |  |  | N |
-| MRG_06 | Y | bigint | numeric | PK |  |  | N |
+| MRG_05 | X | int | numeric | PK |  |  | N |
+| MRG_06 | Y | int | numeric | PK |  |  | N |
 | MRG_07 | PollutantId | int | numeric |  |  |  | N |
 | MRG_08 | End | datetime | datetime |  |  |  | N |
-| MRG_09 | Value | decimal(10,2) | numeric |  |  |  | N |
+| MRG_09 | Value | decimal(10,3) | numeric |  |  |  | N |
 | MRG_10 | Unit | varchar(20) | string |  |  |  | N |
 | MRG_11 | Validity | int | numeric |  |  |  | N |
 | MRG_12 | ResultTime | datetime | datetime |  |  |  | N |
-| MRG_13 | Country | varchar(20) | string |  |  |  | N |
-| MRG_14 | Pollutant | varchar(50) | string |  |  |  | N |
-| MRG_15 | DataAggregationProcess | varchar(XXX) | string |  |  |  | N |
+| MRG_13 | Country | varchar(50) | string |  |  |  | N |
+| MRG_14 | Pollutant | varchar(100) | string |  |  |  | N |
+| MRG_15 | DataAggregationProcess | varchar(100) | string |  |  |  | N |
 | MRG_16 | Verification | int | numeric |  |  |  | N |
-| MRG_17 | Area |  |  |  |  |  | N |
+| MRG_17 | Area | decimal(10,3) |  |  |  |  | N |
 | MRG_18 | GridNum10m | bigint | numeric |  |  |  | N |
 | MRG_19 | GridNum100m | bigint | numeric |  |  |  | N |
 | MRG_20 | GridNum1km | bigint | numeric |  |  |  | N |
 | MRG_21 | GridNum10km | bigint | numeric |  |  |  | N |
-| MRG_22 | SourceDataFlow | ??? | ??? |  |  |  | N |
+| MRG_22 | SourceDataFlow | varchar(10) | ??? |  |  |  | N |
 | MRG_23 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}

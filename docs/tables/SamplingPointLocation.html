@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=6c1e2601" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=48cd5d37" />
 
   
     <link rel="shortcut icon" href="../_static/favicon.png"/>
@@ -93,6 +93,12 @@
 <li class="toctree-l2"><a class="reference internal" href="ScenarioMeasure.html">ScenarioMeasure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Measure.html">Measure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Documentation.html">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AdminBoundaryGrid.html">AdminBoundaryGrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AdminBoundaryLookup.html">AdminBoundaryLookup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CountryAreaPopulation.html">CountryAreaPopulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PopulationGrid.html">PopulationGrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VocabularyRelation.html">VocabularyRelation</a></li>
 </ul>
 </li>
 </ul>
@@ -221,7 +227,7 @@
 </tr>
 <tr class="row-even"><td><p>SPL_05</p></td>
 <td><p>StationArea</p></td>
-<td><p>varchar(100)</p></td>
+<td><p>varchar(50)</p></td>
 <td><p>string</p></td>
 <td><p></p></td>
 <td><p><a class="reference external" href="https://dd.eionet.europa.eu/vocabulary/aq/areaclassification/view">areaclassification</a></p></td>
@@ -240,7 +246,7 @@
 <tr class="row-even"><td><p>SPL_07</p></td>
 <td><p>Hotspot</p></td>
 <td><p>char(1)</p></td>
-<td><p>boolean</p></td>
+<td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -249,7 +255,7 @@
 <tr class="row-odd"><td><p>SPL_08</p></td>
 <td><p>Supersite</p></td>
 <td><p>char(1)</p></td>
-<td><p>boolean</p></td>
+<td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -257,7 +263,7 @@
 </tr>
 <tr class="row-even"><td><p>SPL_09</p></td>
 <td><p>Latitude</p></td>
-<td><p>decimal(8,4)</p></td>
+<td><p>decimal(9,6)</p></td>
 <td><p>numeric</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -266,7 +272,7 @@
 </tr>
 <tr class="row-odd"><td><p>SPL_10</p></td>
 <td><p>Longitude</p></td>
-<td><p>decimal(8,4)</p></td>
+<td><p>decimal(9,6)</p></td>
 <td><p>numeric</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -329,7 +335,7 @@
 </tr>
 <tr class="row-even"><td><p>SPL_17</p></td>
 <td><p>X</p></td>
-<td><p>bigint</p></td>
+<td><p>int</p></td>
 <td><p>numeric</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -338,7 +344,7 @@
 </tr>
 <tr class="row-odd"><td><p>SPL_18</p></td>
 <td><p>Y</p></td>
-<td><p>bigint</p></td>
+<td><p>int</p></td>
 <td><p>numeric</p></td>
 <td><p></p></td>
 <td><p></p></td>

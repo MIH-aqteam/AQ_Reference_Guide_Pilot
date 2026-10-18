@@ -16,10 +16,10 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | ZGG_01 | CountryCode | varchar(2) | string | PK |  |  | N |
-| ZGG_02 | ZoneId | varchar(64) | string | PK |  |  | N |
-| ZGG_03 | X | bigint | numeric | PK |  |  | N |
-| ZGG_04 | Y | bigint | numeric | PK |  |  | N |
-| ZGG_05 | Country | varchar(64) | string |  |  |  | N |
+| ZGG_02 | ZoneId | varchar(50) | string | PK |  |  | N |
+| ZGG_03 | X | int | numeric | PK |  |  | N |
+| ZGG_04 | Y | int | numeric | PK |  |  | N |
+| ZGG_05 | Country | varchar(50) | string |  |  |  | N |
 | ZGG_06 | Area | numeric(10,3) | ??? |  |  |  | N |
 | ZGG_07 | GridNum100m | bigint | numeric |  |  |  | N |
 | ZGG_08 | GridNum1km | bigint | numeric |  |  |  | N |

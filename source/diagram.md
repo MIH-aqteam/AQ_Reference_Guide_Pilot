@@ -24,8 +24,8 @@ The numbering follows the table numbering used in the AQ eReporting data model, 
 | 6   | {doc}`tables/ModelObjectiveEstimation`          |
 | 6A  | {doc}`tables/MOEResultGrid`                     |
 | 6B  | {doc}`tables/MOEResultInventory`                |
-| 7A  | {doc}`tables/ObservationMeasurementStatistics` |
-| 7B  | {doc}`tables/ObservationMeasurementInventory`  |
+| 7A  | {doc}`tables/ObservationMeasurementStatistics`  |
+| 7B  | {doc}`tables/ObservationMeasurementInventory`   |
 | 10  | {doc}`tables/ZoneGeometry`                      |
 | 10A | {doc}`tables/ZoneGeometryGrid`                  |
 | 11  | {doc}`tables/AssessmentRegimeZone`              |
@@ -41,3 +41,9 @@ The numbering follows the table numbering used in the AQ eReporting data model, 
 | 20  | {doc}`tables/ScenarioMeasure`                   |
 | 21  | {doc}`tables/Measure`                           |
 | 22  | {doc}`tables/Documentation`                     |
+| 23  | {doc}`tables/AdminBoundaryGrid`                 |
+| 24  | {doc}`tables/AdminBoundaryLookup`               |
+| 25  | {doc}`tables/CountryAreaPopulation`             |
+| 26  | {doc}`tables/PopulationGrid`                    |
+| 27  | {doc}`tables/Vocabulary`                        |
+| 28  | {doc}`tables/VocabularyRelation`                |

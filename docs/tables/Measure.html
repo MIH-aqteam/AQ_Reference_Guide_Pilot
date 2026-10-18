@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=6c1e2601" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=48cd5d37" />
 
   
     <link rel="shortcut icon" href="../_static/favicon.png"/>
@@ -93,6 +93,12 @@
 <li class="toctree-l2"><a class="reference internal" href="ScenarioMeasure.html">ScenarioMeasure</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Measure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Documentation.html">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AdminBoundaryGrid.html">AdminBoundaryGrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AdminBoundaryLookup.html">AdminBoundaryLookup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CountryAreaPopulation.html">CountryAreaPopulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PopulationGrid.html">PopulationGrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Vocabulary.html">Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VocabularyRelation.html">VocabularyRelation</a></li>
 </ul>
 </li>
 </ul>
@@ -188,7 +194,7 @@
 </tr>
 <tr class="row-odd"><td><p>MEA_02</p></td>
 <td><p>MeasureGroupId</p></td>
-<td><p>varchar(50)</p></td>
+<td><p>varchar(100)</p></td>
 <td><p>string</p></td>
 <td><p>PK</p></td>
 <td><p></p></td>
@@ -197,7 +203,7 @@
 </tr>
 <tr class="row-even"><td><p>MEA_03</p></td>
 <td><p>MeasureId</p></td>
-<td><p>varchar(50)</p></td>
+<td><p>varchar(200)</p></td>
 <td><p>string</p></td>
 <td><p>PK</p></td>
 <td><p></p></td>
@@ -215,7 +221,7 @@
 </tr>
 <tr class="row-even"><td><p>MEA_04</p></td>
 <td><p>MeasureNationalCode</p></td>
-<td><p>varchar(50)</p></td>
+<td><p>varchar(100)</p></td>
 <td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -287,7 +293,7 @@
 </tr>
 <tr class="row-even"><td><p>MEA_12</p></td>
 <td><p>MeasureCost</p></td>
-<td><p>decimal(18,2)</p></td>
+<td><p>bigint</p></td>
 <td><p>numeric</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -324,7 +330,7 @@
 <tr class="row-even"><td><p>MEA_16</p></td>
 <td><p>Deletion</p></td>
 <td><p>char(1)</p></td>
-<td><p>boolean</p></td>
+<td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -332,7 +338,7 @@
 </tr>
 <tr class="row-odd"><td><p>MEA_21</p></td>
 <td><p>Country</p></td>
-<td><p>varchar(20)</p></td>
+<td><p>varchar(50)</p></td>
 <td><p>string</p></td>
 <td><p></p></td>
 <td><p></p></td>

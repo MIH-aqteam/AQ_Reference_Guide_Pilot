@@ -18,21 +18,21 @@
 | MOI_01 | CountryCode | varchar(2) | string | PK |  |  | N |
 | MOI_02 | AssessmentMethodId | varchar(100) | string | PK |  |  | N |
 | MOI_03 | DataAggregationProcessId | varchar(50) | string | PK |  |  | N |
-| MOI_04 | Year |  |  | PK |  |  | N |
+| MOI_04 | Year | int |  | PK |  |  | N |
 | MOI_05 | PollutantId | int | numeric |  |  |  | N |
 | MOI_06 | Unit | varchar(20) | string |  |  |  | N |
 | MOI_07 | Validity | int | numeric |  |  |  | N |
 | MOI_08 | SpatialResolution | int | numeric |  |  |  | N |
-| MOI_09 | Country | varchar(20) | string |  |  |  | N |
-| MOI_10 | Pollutant | varchar(50) | string |  |  |  | N |
-| MOI_11 | DataAggregationProcess | varchar(XXX) | string |  |  |  | N |
-| MOI_12 | ValueCount | int | numeric |  |  |  | N |
+| MOI_09 | Country | varchar(50) | string |  |  |  | N |
+| MOI_10 | Pollutant | varchar(100) | string |  |  |  | N |
+| MOI_11 | DataAggregationProcess | varchar(100) | string |  |  |  | N |
+| MOI_12 | ValueCount | bigint | numeric |  |  |  | N |
 | MOI_13 | StartInYear | datetime | datetime |  |  |  | N |
 | MOI_14 | EndInYear | datetime | datetime |  |  |  | N |
-| MOI_15 | MinResultTimeInYear | ??? | ??? |  |  |  | N |
-| MOI_16 | MaxResultTimeInYear | ??? | ??? |  |  |  | N |
-| MOI_17 | SourceDataFlow | ??? | ??? |  |  |  | N |
-| MOI_18 | RawDataURL | varchar(50) | string |  |  |  | N |
+| MOI_15 | MinResultTimeInYear | datetime | ??? |  |  |  | N |
+| MOI_16 | MaxResultTimeInYear | datetime | ??? |  |  |  | N |
+| MOI_17 | SourceDataFlow | varchar(10) | ??? |  |  |  | N |
+| MOI_18 | RawDataURL | varchar(250) | string |  |  |  | N |
 | MOI_19 | Deletion | bit | boolean |  |  |  | N |
 
 ```{note}

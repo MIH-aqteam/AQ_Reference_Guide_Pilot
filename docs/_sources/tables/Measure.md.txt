@@ -16,10 +16,10 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | MEA_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-01-countrycode) |
-| MEA_02 | MeasureGroupId | varchar(50) | string | PK |  | [ScenarioMeasure](ScenarioMeasure.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-02-measuregroupid) |
-| MEA_03 | MeasureId | varchar(50) | string | PK |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-03-measureid) |
+| MEA_02 | MeasureGroupId | varchar(100) | string | PK |  | [ScenarioMeasure](ScenarioMeasure.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-02-measuregroupid) |
+| MEA_03 | MeasureId | varchar(200) | string | PK |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-03-measureid) |
 | MEA_20 | ReportingTime | datetime | datetime | PK |  |  | N |
-| MEA_04 | MeasureNationalCode | varchar(50) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-04-measurenationalcode) |
+| MEA_04 | MeasureNationalCode | varchar(100) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-04-measurenationalcode) |
 | MEA_05 | MeasureName | varchar(150) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-05-measurename) |
 | MEA_06 | MeasureClassification | varchar(50) | string |  | [measureclassification](https://dd.eionet.europa.eu/vocabulary/aq/measureclassification/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-06-measureclassification) |
 | MEA_07 | MeasureType | varchar(50) | string |  | [measuretype](https://dd.eionet.europa.eu/vocabulary/aq/measuretype/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-07-measuretype) |
@@ -27,12 +27,12 @@
 | MEA_09 | SpatialScale | varchar(50) | string |  | [spatialscale](https://dd.eionet.europa.eu/vocabulary/aq/spatialscale/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-09-spatialscale) |
 | MEA_10 | ImplementationBegin | date | date |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-10-implementationbegin) |
 | MEA_11 | ImplementationEnd | date | date |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-11-implementationend) |
-| MEA_12 | MeasureCost | decimal(18,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-12-measurecost) |
+| MEA_12 | MeasureCost | bigint | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-12-measurecost) |
 | MEA_13 | FullEffectDate | date | date |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-13-fulleffectdate) |
 | MEA_14 | MeasureStatus | varchar(50) | string |  | [measureimplementationstatus](https://dd.eionet.europa.eu/vocabulary/aq/measureimplementationstatus/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-14-measurestatus) |
 | MEA_15 | ReasonIfMeasureNotUsed | varchar(50) | string |  | [reasonifmeasurenotused](https://dd.eionet.europa.eu/vocabulary/aq/reasonifmeasurenotused) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-15-reasonifmeasurenotused) |
-| MEA_16 | Deletion | char(1) | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-16-deletion) |
-| MEA_21 | Country | varchar(20) | string |  |  |  | N |
+| MEA_16 | Deletion | char(1) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-16-deletion) |
+| MEA_21 | Country | varchar(50) | string |  |  |  | N |
 
 ```{note}
 `ReportingTime` and `Country` are Reference attributes without a corresponding attribute in the reporting data model.

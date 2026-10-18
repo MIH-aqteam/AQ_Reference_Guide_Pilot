@@ -17,8 +17,8 @@
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | SRG_01 | CountryCode | varchar(2) | string | PK |  |  | N |
 | SRG_02 | SRSApplicationId | varchar(100) | string | PK |  |  | N |
-| SRG_03 | X | bigint | numeric | PK |  |  | N |
-| SRG_04 | Y | bigint | numeric | PK |  |  | N |
+| SRG_03 | X | int | numeric | PK |  |  | N |
+| SRG_04 | Y | int | numeric | PK |  |  | N |
 | SRG_05 | Area | decimal(10,3) | ??? |  |  |  | N |
 | SRG_06 | Country | varchar(50) | string |  |  |  | N |
 | SRG_07 | GridNum10m | bigint | numeric |  |  |  | N |

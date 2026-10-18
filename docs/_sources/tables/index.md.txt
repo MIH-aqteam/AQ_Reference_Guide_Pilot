@@ -35,6 +35,12 @@ SourceApportionment
 ScenarioMeasure
 Measure
 Documentation
+AdminBoundaryGrid
+AdminBoundaryLookup
+CountryAreaPopulation
+PopulationGrid
+Vocabulary
+VocabularyRelation
 ```
 
 <div class="reporting-table-grid">
@@ -219,6 +225,54 @@ Documentation
 <span class="reporting-table-title">Documentation</span>
 <span class="reporting-table-image">
 <img src="../_static/table-icons/Documentation.png" alt="Documentation">
+</span>
+</a>
+
+<a class="reporting-table-card reference-only-table" href="AdminBoundaryGrid.html">
+<span class="reporting-table-title">AdminBoundaryGrid</span>
+<span class="reference-only-badge">REFERENCE ONLY</span>
+<span class="reporting-table-image">
+<img src="../_static/table-icons/technical_table.png" alt="AdminBoundaryGrid">
+</span>
+</a>
+
+<a class="reporting-table-card reference-only-table" href="AdminBoundaryLookup.html">
+<span class="reporting-table-title">AdminBoundaryLookup</span>
+<span class="reference-only-badge">REFERENCE ONLY</span>
+<span class="reporting-table-image">
+<img src="../_static/table-icons/technical_table.png" alt="AdminBoundaryLookup">
+</span>
+</a>
+
+<a class="reporting-table-card reference-only-table" href="CountryAreaPopulation.html">
+<span class="reporting-table-title">CountryAreaPopulation</span>
+<span class="reference-only-badge">REFERENCE ONLY</span>
+<span class="reporting-table-image">
+<img src="../_static/table-icons/technical_table.png" alt="CountryAreaPopulation">
+</span>
+</a>
+
+<a class="reporting-table-card reference-only-table" href="PopulationGrid.html">
+<span class="reporting-table-title">PopulationGrid</span>
+<span class="reference-only-badge">REFERENCE ONLY</span>
+<span class="reporting-table-image">
+<img src="../_static/table-icons/technical_table.png" alt="PopulationGrid">
+</span>
+</a>
+
+<a class="reporting-table-card reference-only-table" href="Vocabulary.html">
+<span class="reporting-table-title">Vocabulary</span>
+<span class="reference-only-badge">REFERENCE ONLY</span>
+<span class="reporting-table-image">
+<img src="../_static/table-icons/technical_table.png" alt="Vocabulary">
+</span>
+</a>
+
+<a class="reporting-table-card reference-only-table" href="VocabularyRelation.html">
+<span class="reporting-table-title">VocabularyRelation</span>
+<span class="reference-only-badge">REFERENCE ONLY</span>
+<span class="reporting-table-image">
+<img src="../_static/table-icons/technical_table.png" alt="VocabularyRelation">
 </span>
 </a>
 

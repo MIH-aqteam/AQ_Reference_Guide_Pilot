@@ -20,23 +20,27 @@
 | OMI_08 | Validity | int | numeric | PK |  |  | N |
 | OMI_09 | Verification | int | numeric | PK |  |  | N |
 | OMI_11 | TimeResolution | varchar(10) | string | PK |  |  | N |
-| OMI_12 | Year |  |  | PK |  |  | N |
+| OMI_12 | Year | int |  | PK |  |  | N |
 | OMI_04 | PollutantId | int | numeric |  |  |  | N |
 | OMI_07 | Unit | varchar(20) | string |  |  |  | N |
-| OMI_13 | Country | varchar(20) | string |  |  |  | N |
+| OMI_13 | Country | varchar(50) | string |  |  |  | N |
 | OMI_14 | SamplingPointReferenceId | varchar(32) | string |  |  |  | N |
-| OMI_15 | Pollutant | varchar(50) | string |  |  |  | N |
-| OMI_16 | ValueCount | int | numeric |  |  |  | N |
+| OMI_15 | Pollutant | varchar(100) | string |  |  |  | N |
+| OMI_16 | ValueCount | bigint | numeric |  |  |  | N |
 | OMI_17 | StartInYear | datetime | datetime |  |  |  | N |
 | OMI_18 | EndInYear | datetime | datetime |  |  |  | N |
-| OMI_19 | MinResultTimeInYear | ??? | ??? |  |  |  | N |
-| OMI_20 | MaxResultTimeInYear | ??? | ??? |  |  |  | N |
-| OMI_21 | SourceDataFlow | ??? | ??? |  |  |  | N |
-| OMI_22 | RawDataURL | varchar(50) | string |  |  |  | N |
+| OMI_19 | MinResultTimeInYear | datetime | ??? |  |  |  | N |
+| OMI_20 | MaxResultTimeInYear | datetime | ??? |  |  |  | N |
+| OMI_21 | SourceDataFlow | varchar(10) | ??? |  |  |  | N |
+| OMI_22 | RawDataURL | varchar(250) | string |  |  |  | N |
 | OMI_23 | Deletion | bit | boolean |  |  |  | N |
+| OMI_24 | Size | int | numeric |  |  |  | N |
+| OMI_25 | ParquetLastUpdated | datetime | datetime |  |  |  | N |
 
 ```{note}
 There is no corresponding table in the reporting data model. Therefore, all attributes are marked `N`.
+
+`Size`, `ParquetLastUpdated` — if intended to be public.
 ```
 
 ```{note}
@@ -234,3 +238,7 @@ Flag to indicate that this element must be deleted.
 **In Reporting**
 
 N - No corresponding reporting table.
+
+### OMI_24 - Size
+
+### OMI_25 - ParquetLastUpdated

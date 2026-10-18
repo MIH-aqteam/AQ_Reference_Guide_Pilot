@@ -16,15 +16,15 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | SME_01 | CountryCode | varchar(2) | string | PK | [countries](https://dd.eionet.europa.eu/vocabulary/common/countries) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-01-countrycode) |
-| SME_02 | ScenarioId | varchar(50) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md)<br>[PlanScenario](PlanScenario.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-02-scenarioid) |
+| SME_02 | ScenarioId | varchar(100) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md)<br>[PlanScenario](PlanScenario.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-02-scenarioid) |
 | SME_03 | ScenarioCategory | varchar(20) | string | PK | [scenariocategory](https://dd.eionet.europa.eu/vocabulary/aq/scenariocategory) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-03-scenariocategory) |
-| SME_04 | MeasureGroupId | varchar(50) | string | PK |  | [MeasurementStation](MeasurementStation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-04-measuregroupid) |
+| SME_04 | MeasureGroupId | varchar(100) | string | PK |  | [MeasurementStation](MeasurementStation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-04-measuregroupid) |
 | SME_05 | MeasureGroupPollutionReduction | decimal(10,2) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-05-measuregrouppollutionreduction) |
 | SME_06 | MeasureReductionAssessmentMethodId | varchar(100) | string |  |  | [ModelObjectiveEstimation](ModelObjectiveEstimation.md) | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/ScenarioMeasure.html#sme-06-measurereductionassessmentmethodid) |
-| SME_07 | Country | varchar(20) | string |  |  |  | N |
-| SME_08 | Pollutant | varchar(50) | string |  |  |  | N |
+| SME_07 | Country | varchar(50) | string |  |  |  | N |
+| SME_08 | Pollutant | varchar(100) | string |  |  |  | N |
 | SME_09 | PollutantId | int | numeric |  |  |  | N |
-| SME_10 | DataAggregationProcess | varchar(XXX) | string |  |  |  | N |
+| SME_10 | DataAggregationProcess | varchar(100) | string |  |  |  | N |
 | SME_11 | DataAggregationProcessId | varchar(50) | string |  |  |  | N |
 | SME_12 | Deletion | bit | boolean |  |  |  | N |
 

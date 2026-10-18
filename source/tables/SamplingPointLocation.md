@@ -19,20 +19,20 @@
 | SPL_02 | AssessmentMethodId | varchar(100) | string | PK |  | [ComplianceAssessmentMethod](ComplianceAssessmentMethod.md)<br>[SamplingPoint](SamplingPoint.md)<br>[SamplingProcess](SamplingProcess.md)<br>ObservationMeasurementResult | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-02-assessmentmethodid) |
 | SPL_03 | LocationBegin | datetime | datetime | PK |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-03-locationbegin) |
 | SPL_04 | LocationEnd | datetime | datetime |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-04-locationend) |
-| SPL_05 | StationArea | varchar(100) | string |  | [areaclassification](https://dd.eionet.europa.eu/vocabulary/aq/areaclassification/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-05-stationarea) |
+| SPL_05 | StationArea | varchar(50) | string |  | [areaclassification](https://dd.eionet.europa.eu/vocabulary/aq/areaclassification/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-05-stationarea) |
 | SPL_06 | SamplingPointCategory | varchar(50) | string |  | [samplingpointcategory](https://dd.eionet.europa.eu/vocabulary/aq/samplingpointcategory) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-06-samplingpointcategory) |
-| SPL_07 | Hotspot | char(1) | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-07-hotspot) |
-| SPL_08 | Supersite | char(1) | boolean |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-08-supersite) |
-| SPL_09 | Latitude | decimal(8,4) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-09-latitude) |
-| SPL_10 | Longitude | decimal(8,4) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-10-longitude) |
+| SPL_07 | Hotspot | char(1) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-07-hotspot) |
+| SPL_08 | Supersite | char(1) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-08-supersite) |
+| SPL_09 | Latitude | decimal(9,6) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-09-latitude) |
+| SPL_10 | Longitude | decimal(9,6) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-10-longitude) |
 | SPL_11 | Altitude | decimal(10,1) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-11-altitude) |
 | SPL_12 | InletHeight | decimal(10,1) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-12-inletheight) |
 | SPL_13 | BuildingDistance | decimal(10,1) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-13-buildingdistance) |
 | SPL_14 | KerbDistance | decimal(10,1) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-14-kerbdistance) |
 | SPL_15 | EmissionSourceDistance | decimal(10,1) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-15-emissionsourcedistance) |
 | SPL_16 | Country | varchar(50) | string |  |  |  | N |
-| SPL_17 | X | bigint | numeric |  |  |  | N |
-| SPL_18 | Y | bigint | numeric |  |  |  | N |
+| SPL_17 | X | int | numeric |  |  |  | N |
+| SPL_18 | Y | int | numeric |  |  |  | N |
 | SPL_19 | GridNum10m | bigint | numeric |  |  |  | N |
 | SPL_20 | GridNum100m | bigint | numeric |  |  |  | N |
 | SPL_21 | GridNum1km | bigint | numeric |  |  |  | N |

@@ -16,15 +16,15 @@
 | Attribute Code | Attribute Name | SQL DB Data Type | ReportNet3 Data Type | Properties | Code list | Related table(s) | In Reporting |
 | -------------- | -------------- | ---------------- | -------------------- | ---------- | --------- | ---------------- | :----------: |
 | PLA_01 | CountryCode | varchar(2) | string | PK |  |  | N |
-| PLA_03 | PlanId | varchar(50) | string | PK |  |  | N |
+| PLA_03 | PlanId | varchar(100) | string | PK |  |  | N |
 | PLA_06 | PlanCategory | varchar(20) | string |  |  |  | N |
-| PLA_07 | PlanTitle | nvarchar(1000) | string |  |  |  | N |
+| PLA_07 | PlanTitle | varchar(1000) | string |  |  |  | N |
 | PLA_08 | PlanAdoptionDate | date | date |  |  |  | N |
 | PLA_09 | PlanBeginDate | date | date |  |  |  | N |
 | PLA_10 | PlanEndDate | date | date |  |  |  | N |
 | PLA_11 | PlanDocumentId | varchar(150) | string |  |  |  | N |
 | PLA_12 | Deletion | bit | boolean |  |  |  | N |
-| PLA_13 | Country | varchar(20) | string |  |  |  | N |
+| PLA_13 | Country | varchar(50) | string |  |  |  | N |
 
 ```{note}
 There is no corresponding table in the reporting data model. Therefore, all attributes are marked `N`.

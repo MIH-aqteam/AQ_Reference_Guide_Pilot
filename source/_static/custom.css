@@ -527,27 +527,27 @@ footer {
 /* Reference-only table cards */
 
 .rst-content a.reporting-table-card.reference-only-table {
-    background: #2b2f33;
-    border-color: #111417;
+    background: #DCE2E7;
+    border-color: #9AA8B4;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.28);
 }
 
 .rst-content a.reporting-table-card.reference-only-table:hover {
-    background: #1f2225;
-    border-color: #000000;
+    background: #CCD5DD;
+    border-color: #7E8E9C;
     box-shadow: 0 7px 16px rgba(0, 0, 0, 0.38);
 }
 
 .rst-content a.reporting-table-card.reference-only-table .reporting-table-title {
-    color: #ffffff;
+    color: #25313B;
 }
 
 .rst-content a.reporting-table-card.reference-only-table .reporting-table-image {
-    background: #3a3f44;
+    background: #DCE2E7;
 }
 
 .rst-content a.reporting-table-card.reference-only-table:hover .reporting-table-image {
-    background: #32363a;
+    background: #CCD5DD;
 }
 
 .rst-content .reference-only-badge {
@@ -555,9 +555,9 @@ footer {
     align-self: center;
     margin: 0.15rem 0 0.45rem;
     padding: 0.18rem 0.55rem;
-    color: #ffffff;
-    background: #0d0f11;
-    border: 1px solid #686d72;
+    color: #25313B;
+    background: #C3CED7;
+    border: 1px solid #7E8E9C;
     border-radius: 3px;
     font-size: 0.68rem;
     font-weight: 700;
