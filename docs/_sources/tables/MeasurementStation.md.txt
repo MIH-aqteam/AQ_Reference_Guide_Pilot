@@ -23,7 +23,7 @@
 | STA_05 | NetworkOrganisationalLevel | varchar(20) | string | | [administrativelevel](https://dd.eionet.europa.eu/vocabulary/aq/administrativelevel/view) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/MeasurementStation.html#sta-05-networkorganisationallevel) |
 | STA_06 | Timezone | varchar(20) | string | | [timezone](https://dd.eionet.europa.eu/vocabulary/aq/timezone) | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/MeasurementStation.html#sta-06-timezone) |
 | STA_07 | StationNationalCode | varchar(50) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/MeasurementStation.html#sta-07-stationnationalcode) |
-| STA_08 | StationName | varchar(50) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/MeasurementStation.html#sta-08-stationname) |
+| STA_08 | StationName | varchar(100) | string | | | | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/MeasurementStation.html#sta-08-stationname) |
 | STA_09 | NetworkDocumentId | varchar(150) | string | | | Documentation | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/MeasurementStation.html#sta-09-networkdocumentid) |
 | STA_11 | Country | varchar(50) | string | | | | N |
 | STA_12 | City | varchar(100) | string | | | | N |

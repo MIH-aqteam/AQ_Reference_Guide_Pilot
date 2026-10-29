@@ -190,3 +190,11 @@ Flag to indicate that this element must be deleted..
 **In Reporting**
 
 N - No corresponding reporting attribute.
+
+## Air Quality Reference Data on Authorities
+
+```{admonition} Reference data
+:class: note
+
+[**Access Air Quality Reference Data on Authorities**](https://discomap.eea.europa.eu/App/AQViewer/index.html?fqn=Airquality_R3_Update.reference.Authority)
+```

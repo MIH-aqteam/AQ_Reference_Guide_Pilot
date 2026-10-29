@@ -22,7 +22,7 @@
 | OMS_05 | DataAggregationProcessId | varchar(50) | string | PK |  |  | N |
 | OMS_06 | PollutantId | int | numeric |  |  |  | N |
 | OMS_07 | Value | decimal(10,3) | numeric |  |  |  | N |
-| OMS_08 | Unit | varchar(20) | string |  |  |  | N |
+| OMS_08 | Unit | varchar(20) | string |  | [concentrationunits](https://dd.eionet.europa.eu/vocabulary/uom/concentration/) |  | N |
 | OMS_09 | Validity | int | numeric |  |  |  | N |
 | OMS_10 | Verification | int | numeric |  |  |  | N |
 | OMS_11 | DataCapture | decimal(5,2) | numeric |  |  |  | N |

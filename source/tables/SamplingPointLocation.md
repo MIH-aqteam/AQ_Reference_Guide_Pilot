@@ -21,8 +21,8 @@
 | SPL_04 | LocationEnd | datetime | datetime |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-04-locationend) |
 | SPL_05 | StationArea | varchar(50) | string |  | [areaclassification](https://dd.eionet.europa.eu/vocabulary/aq/areaclassification/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-05-stationarea) |
 | SPL_06 | SamplingPointCategory | varchar(50) | string |  | [samplingpointcategory](https://dd.eionet.europa.eu/vocabulary/aq/samplingpointcategory) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-06-samplingpointcategory) |
-| SPL_07 | Hotspot | char(1) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-07-hotspot) |
-| SPL_08 | Supersite | char(1) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-08-supersite) |
+| SPL_07 | Hotspot | char(1) | string |  | [hotspot](https://dd.eionet.europa.eu/vocabulary/aq/hotspot/)  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-07-hotspot) |
+| SPL_08 | Supersite | char(1) | string |  | [supersite](http://dd.eionet.europa.eu/vocabulary/aq/supersite/)  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-08-supersite) |
 | SPL_09 | Latitude | decimal(9,6) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-09-latitude) |
 | SPL_10 | Longitude | decimal(9,6) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-10-longitude) |
 | SPL_11 | Altitude | decimal(10,1) | numeric |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/SamplingPointLocation.html#spl-11-altitude) |

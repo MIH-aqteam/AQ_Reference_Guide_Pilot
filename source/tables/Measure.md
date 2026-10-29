@@ -21,7 +21,7 @@
 | MEA_20 | ReportingTime | datetime | datetime | PK |  |  | N |
 | MEA_04 | MeasureNationalCode | varchar(100) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-04-measurenationalcode) |
 | MEA_05 | MeasureName | varchar(150) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-05-measurename) |
-| MEA_06 | MeasureClassification | varchar(50) | string |  | [measureclassification](https://dd.eionet.europa.eu/vocabulary/aq/measureclassification/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-06-measureclassification) |
+| MEA_06 | MeasureClassification | varchar(50) | string |  | [measureclassification - recast](http://dd.eionet.europa.eu/vocabulary/aq/measureclassification2024recast/) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-06-measureclassification) |
 | MEA_07 | MeasureType | varchar(50) | string |  | [measuretype](https://dd.eionet.europa.eu/vocabulary/aq/measuretype/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-07-measuretype) |
 | MEA_08 | SourceSector | varchar(50) | string |  | [sourcesectors](https://dd.eionet.europa.eu/vocabulary/aq/sourcesectors/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-08-sourcesector) |
 | MEA_09 | SpatialScale | varchar(50) | string |  | [spatialscale](https://dd.eionet.europa.eu/vocabulary/aq/spatialscale/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-09-spatialscale) |
@@ -31,7 +31,7 @@
 | MEA_13 | FullEffectDate | date | date |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-13-fulleffectdate) |
 | MEA_14 | MeasureStatus | varchar(50) | string |  | [measureimplementationstatus](https://dd.eionet.europa.eu/vocabulary/aq/measureimplementationstatus/view) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-14-measurestatus) |
 | MEA_15 | ReasonIfMeasureNotUsed | varchar(50) | string |  | [reasonifmeasurenotused](https://dd.eionet.europa.eu/vocabulary/aq/reasonifmeasurenotused) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-15-reasonifmeasurenotused) |
-| MEA_16 | Deletion | char(1) | string |  |  |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-16-deletion) |
+| MEA_16 | Deletion | char(1) | string |  | [Deletion](http://dd.eionet.europa.eu/vocabulary/aq/deletion/) |  | [Y](https://eeadata.github.io/AQ.Documentation.ReportingGuide/tables/Measure.html#mea-16-deletion) |
 | MEA_21 | Country | varchar(50) | string |  |  |  | N |
 
 ```{note}
